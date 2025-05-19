@@ -38,9 +38,10 @@ const sideMenuIcons = [
 
 export default function ProfileCard() {
   const context = useContext(LayoutContext);
-  if (!context) throw new Error("LayoutContext must be used within a LayoutContext.Provider");
+  if (!context)
+    throw new Error("LayoutContext must be used within a LayoutContext.Provider");
 
-  const { translations, isRTL } = context;
+  const { language, setLanguage, translations, isRTL } = context
   const PROFILEinfo = translations.PROFILE;
   const info = translations.info;
 
@@ -59,9 +60,10 @@ export default function ProfileCard() {
   return (
     <div
       dir={isRTL ? "rtl" : "ltr"}
-      className="flex justify-center items-start transition-colors duration-300 px-2 sm:px-4 md:px-6"
+      className="flex justify-center items-start transition-colors duration-300"
     >
       <div className="w-full max-w-[1320px]">
+        {/* Topbar */}
         <div className="w-full grid grid-cols-[44px_1fr] md:grid-cols-[44px_300px_1fr] bg-[#121414] dark:bg-zinc-900 border-b border-zinc-800 text-white px-4 sm:px-6">
           <div></div>
           <div className="relative flex">
@@ -99,34 +101,46 @@ export default function ProfileCard() {
           </div>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="bg-[#171B1A] dark:bg-zinc-900 grid grid-cols-1 md:grid-cols-[auto_68px_300px_1fr_68px_auto]"
-        >
+        {/* Main layout */}
+        <div className="bg-[#171B1A] dark:bg-zinc-900 grid grid-cols-1 md:grid-cols-[auto_68px_300px_1fr_68px_auto]">
+          {/* Left gradient */}
           <div className="hidden md:block relative w-full h-full overflow-hidden">
             <div
               className="absolute inset-0 z-0"
-              style={{ background: "linear-gradient(225deg, #171B1A 50%, #121414 50%)" }}
+              style={{
+                background: "linear-gradient(225deg, #171B1A 50%, #121414 50%)",
+              }}
             />
           </div>
 
+          {/* Side menu icons */}
           <div className="hidden md:flex relative max-w-[68px] w-full flex-col items-center justify-center py-8 overflow-hidden">
             <div
               className="absolute inset-0 z-0"
-              style={{ background: "linear-gradient(225deg, #171B1A 50%, #121414 50%)" }}
+              style={{
+                background: "linear-gradient(225deg, #171B1A 50%, #121414 50%)",
+              }}
             />
             <div className="relative z-10 flex flex-col gap-8">
               {sideMenuIcons.map((icon, i) => (
-                <div key={i} className="text-gray-400 hover:text-yellow-400 text-2xl cursor-pointer">
+                <div
+                  key={i}
+                  className="text-gray-400 hover:text-yellow-400 text-2xl cursor-pointer transition-transform duration-300 hover:scale-110"
+                >
                   {icon}
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="bg-black dark:bg-zinc-800 max-w-[300px] w-full mx-auto flex flex-col justify-between items-center">
+          {/* Profile card */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="bg-black dark:bg-zinc-800 max-w-[300px] w-full mx-auto flex flex-col justify-between items-center border border-transparent hover:border-[#f5bd4d8e] transition-all duration-300 rounded"
+          >
             <Image
               height={400}
               width={300}
@@ -139,15 +153,22 @@ export default function ProfileCard() {
                 <a
                   key={i}
                   href={link.url}
-                  className="text-gray-300 text-[16px] p-2 bg-[#121414] rounded-full transition duration-300"
+                  className="text-gray-300 text-[16px] p-2 bg-[#121414] rounded-full transition duration-300 hover:scale-110"
                 >
                   {link.icon}
                 </a>
               ))}
             </div>
-          </div>
+          </motion.div>
 
-          <div className="p-6 md:p-10 flex flex-col max-w-full justify-center">
+          {/* Main content */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="p-6 md:p-10 flex flex-col max-w-full justify-center"
+          >
             <span className="text-yellow-400 uppercase tracking-widest text-xs sm:text-sm mb-2">
               {PROFILEinfo.INTRODUCTION}
             </span>
@@ -170,26 +191,47 @@ export default function ProfileCard() {
               {PROFILEinfo.DOWNLOAD_CV}
               <RxDownload />
             </a>
-          </div>
+          </motion.div>
 
+          {/* Right gradient and footer */}
           <div className="hidden md:flex relative max-w-[68px] w-full items-center justify-center overflow-hidden">
             <div
               className="absolute inset-0 z-0"
-              style={{ background: "linear-gradient(135deg, #171B1A 50%, #121414 50%)" }}
+              style={{
+                background: "linear-gradient(135deg, #171B1A 50%, #121414 50%)",
+              }}
             />
-            <div className="absolute inset-0 z-10 flex flex-col gap-20 justify-evenly items-center">
-              <div className="transform rotate-90 origin-center text-[10px] lg:text-[12px] mt-24 text-gray-300 whitespace-nowrap">
+            <div className="absolute top-10 inset-0 z-10 flex flex-col gap-32 justify-evenly items-center">
+              <div className="rotate-90 origin-center text-[10px] lg:text-[12px] mt-24 text-gray-300 whitespace-nowrap">
                 © design by themefisher developed by gethugothemes
               </div>
-              <div className="flex flex-col items-center gap-2">
-                <span className="bg-zinc-700 text-white text-[10px] px-3 py-1 rounded-full">Fr</span>
-                <span className="bg-yellow-500 text-white text-[10px] px-3 py-1 rounded-full">En</span>
-              </div>
+           <div className="flex flex-col items-center gap-3">
+              {["fr", "en", "ar"].map((lang) => (
+                <span
+              key={lang}
+              onClick={() => setLanguage(lang)}
+              className={`text-white text-[10px] px-2 py-1 rounded-full cursor-pointer transition
+                ${
+                  language === lang
+                    ? "text-black"
+                    : "bg-zinc-700 hover:bg-yellow-400 hover:text-black"
+                }`}
+              style={
+                language === lang
+                  ? { background: "linear-gradient(to right, #F5BD4D, #F89222)" }
+                  : {}
+              }
+            >
+              {lang.toUpperCase()}
+            </span>
+              ))}
+            </div>
             </div>
           </div>
 
+          {/* Right empty column for layout symmetry */}
           <div className="hidden md:block" />
-        </motion.div>
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,128 @@
+{
+  "PROFILE": {
+    "INTRODUCTION": "INTRODUCTION",
+    "CREATIVE_ROLE": "Je suis un développeur créatif et expert en design UI/UX",
+    "DOWNLOAD_CV": "Télécharger le CV",
+    "TALK_TO_ME": "Parlez-moi"
+  },
+  "info": {
+    "name": "Daryl Smith",
+    "profession": "Designer UI/UX",
+    "age": "24 ans",
+    "author": "Robert Smith",
+    "location": "Londres, Royaume-Uni",
+    "description": "Développeur web full stack prolifique, passionné par les métriques et l'amélioration continue. A conçu 25 nouvelles fonctionnalités par an pour Flexor, Inc. Réduction de la refonte de 22 % et des coûts de 15 %. A constamment reçu des notes élevées en expérience utilisateur. Un de mes sites a reçu un Webby Award 2020 pour la meilleure navigation et structure."
+  },
+  "education": [
+    {
+      "period": "2016–2020",
+      "university": "Université Harvard",
+      "degree": "Licence et Master en informatique",
+      "description": "Étude de sujets fondamentaux et avancés en informatique..."
+    },
+    {
+      "period": "2014–2016",
+      "university": "Université Helwan",
+      "degree": "Licence",
+      "description": "Concentration sur la programmation fondamentale et les structures de données..."
+    }
+  ],
+  "workHistory": [
+    {
+      "period": "2021–Présent",
+      "company": "Google",
+      "role": "Ingénieur logiciel senior",
+      "description": "Développement d'applications front-end évolutives..."
+    },
+    {
+      "period": "2020–2021",
+      "company": "Facebook",
+      "role": "Développeur Frontend",
+      "description": "Création de composants React responsives..."
+    }
+  ],
+  "skills": [
+    { "name": "Design UI/UX", "value": 95 },
+    { "name": "Photographie", "value": 90 },
+    { "name": "Créativité", "value": 80 },
+    { "name": "Travail en équipe", "value": 95 },
+    { "name": "Design Web", "value": 95 }
+  ],
+  "contactForm": {
+    "heading": "Contact",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "message": "Message",
+    "sendButton": "Envoyer le message"
+  },
+  "pricing": {
+    "heading": "Tarifs",
+    "month": "mois",
+    "button": "Commencer",
+    "plans": [
+      {
+        "title": "Intro",
+        "price": "$29",
+        "features": [
+          { "label": "Design d'interface", "available": true },
+          { "label": "Code front-end", "available": true },
+          { "label": "Développement back-end", "available": true },
+          { "label": "Optimisation SEO", "available": false },
+          { "label": "Support génial", "available": false },
+          { "label": "Site responsive", "available": true },
+          { "label": "Facile à utiliser", "available": false },
+          { "label": "Site utile", "available": true },
+          { "label": "Web rapide", "available": false }
+        ]
+      },
+      {
+        "title": "Base",
+        "price": "$49",
+        "features": [
+          { "label": "Design d'interface", "available": true },
+          { "label": "Code front-end", "available": true },
+          { "label": "Développement back-end", "available": true },
+          { "label": "Optimisation SEO", "available": true },
+          { "label": "Support génial", "available": false },
+          { "label": "Site responsive", "available": true },
+          { "label": "Facile à utiliser", "available": false },
+          { "label": "Site utile", "available": true },
+          { "label": "Web rapide", "available": false }
+        ]
+      },
+      {
+        "title": "Populaire",
+        "price": "$99",
+        "featured": true,
+        "features": [
+          { "label": "Design d'interface", "available": true },
+          { "label": "Code front-end", "available": true },
+          { "label": "Développement back-end", "available": true },
+          { "label": "Optimisation SEO", "available": true },
+          { "label": "Support génial", "available": true },
+          { "label": "Site responsive", "available": true },
+          { "label": "Facile à utiliser", "available": false },
+          { "label": "Site utile", "available": true },
+          { "label": "Web rapide", "available": false }
+        ]
+      },
+      {
+        "title": "Entreprise",
+        "price": "$199",
+        "features": [
+          { "label": "Design d'interface", "available": true },
+          { "label": "Code front-end", "available": true },
+          { "label": "Développement back-end", "available": true },
+          { "label": "Optimisation SEO", "available": true },
+          { "label": "Support génial", "available": true },
+          { "label": "Site responsive", "available": true },
+          { "label": "Facile à utiliser", "available": true },
+          { "label": "Site utile", "available": true },
+          { "label": "Web rapide", "available": true }
+        ]
+      }
+    ]
+  }
+}

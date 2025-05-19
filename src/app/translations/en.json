@@ -12,5 +12,117 @@
     "author": "Robert Smith",
     "location": "UK London",
     "description": "Prolific, full stack web developer with a passion for metrics and beating former \"best-yets\". Prototyped 25 new product features per year for Flexor, Inc. Decreased rework by 22% and costs by 15%. Consistently receive high user experience scores for all web development projects, including a 55% increase for Flexor, Inc. Passionate about building world class web applications. One of my sites received a 2020 Webby for Best Navigation and Structure."
+  },
+  "education": [
+    {
+      "period": "2016–2020",
+      "university": "Harvard University",
+      "degree": "B.A. and M.S., Computer Science",
+      "description": "Studied core and advanced computer science topics..."
+    },
+    {
+      "period": "2014–2016",
+      "university": "Helwan University",
+      "degree": "Bachelor Degree",
+      "description": "Focused on foundational programming and data structures..."
+    }
+  ],
+  "workHistory": [
+    {
+      "period": "2021–Present",
+      "company": "Google",
+      "role": "Senior Software Engineer",
+      "description": "Worked on scalable front-end applications..."
+    },
+    {
+      "period": "2020–2021",
+      "company": "Facebook",
+      "role": "Frontend Developer",
+      "description": "Built responsive React components..."
+    }
+  ],
+   "skills": [
+    { "name": "UI/UX Design", "value": 95 },
+    { "name": "Photography", "value": 90 },
+    { "name": "Creativity", "value": 80 },
+    { "name": "Team Work", "value": 95 },
+    { "name": "Web Design", "value": 95 }
+  ],
+  "contactForm": {
+    "heading": "Contact",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "sendButton": "Send message"
+  },
+  "pricing": {
+    "heading": "Pricing",
+    "month": "month",
+    "button": "Get Started",
+    "plans": [
+      {
+        "title": "Intro",
+        "price": "$29",
+        "features": [
+          { "label": "Interface Design", "available": true },
+          { "label": "Front-end Code", "available": true },
+          { "label": "Back-end Development", "available": true },
+          { "label": "Search Engine Optimization", "available": false },
+          { "label": "Awesome Support", "available": false },
+          { "label": "Responsive site", "available": true },
+          { "label": "Easy in use", "available": false },
+          { "label": "Useful site", "available": true },
+          { "label": "Speedy web", "available": false }
+        ]
+      },
+      {
+        "title": "Base",
+        "price": "$49",
+        "features": [
+          { "label": "Interface Design", "available": true },
+          { "label": "Front-end Code", "available": true },
+          { "label": "Back-end Development", "available": true },
+          { "label": "Search Engine Optimization", "available": true },
+          { "label": "Awesome Support", "available": false },
+          { "label": "Responsive site", "available": true },
+          { "label": "Easy in use", "available": false },
+          { "label": "Useful site", "available": true },
+          { "label": "Speedy web", "available": false }
+        ]
+      },
+      {
+        "title": "Popular",
+        "price": "$99",
+        "featured": true,
+        "features": [
+          { "label": "Interface Design", "available": true },
+          { "label": "Front-end Code", "available": true },
+          { "label": "Back-end Development", "available": true },
+          { "label": "Search Engine Optimization", "available": true },
+          { "label": "Awesome Support", "available": true },
+          { "label": "Responsive site", "available": true },
+          { "label": "Easy in use", "available": false },
+          { "label": "Useful site", "available": true },
+          { "label": "Speedy web", "available": false }
+        ]
+      },
+      {
+        "title": "Enterprise",
+        "price": "$199",
+        "features": [
+          { "label": "Interface Design", "available": true },
+          { "label": "Front-end Code", "available": true },
+          { "label": "Back-end Development", "available": true },
+          { "label": "Search Engine Optimization", "available": true },
+          { "label": "Awesome Support", "available": true },
+          { "label": "Responsive site", "available": true },
+          { "label": "Easy in use", "available": true },
+          { "label": "Useful site", "available": true },
+          { "label": "Speedy web", "available": true }
+        ]
+      }
+    ]
   }
 }

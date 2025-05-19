@@ -1,6 +1,6 @@
-import type { PortfolioJSON } from '@/types/translations'
+import { Translations } from '@/types/translations'
 import en from './en.json'
 
-const defaultTranslations: PortfolioJSON = en
+const defaultTranslations: Translations = en
 
 export default defaultTranslations

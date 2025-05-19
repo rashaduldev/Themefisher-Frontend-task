@@ -1,10 +1,9 @@
 'use client'
 import { useEffect, useState } from "react"
 import { ThemeProvider } from "next-themes"
-import { PortfolioJSON } from "@/types/translations"
 import defaultTranslations from "@/app/translations/defaultTranslations"
 import { LayoutContext } from "./context"
-import { usePathname } from 'next/navigation'
+import { Translations } from "@/types/translations"
 
 interface ClientLayoutWrapperProps {
   children: React.ReactNode
@@ -12,10 +11,8 @@ interface ClientLayoutWrapperProps {
 
 export default function ClientLayoutWrapper({ children }: ClientLayoutWrapperProps) {
   const [language, setLanguage] = useState<string>('en')
-  const [translations, setTranslations] = useState<PortfolioJSON>(defaultTranslations)
+  const [translations, setTranslations] = useState<Translations>(defaultTranslations)
   const [isLoading, setIsLoading] = useState(true)
-  const pathname = usePathname()
-  const isHome = pathname === '/'
 
   const isRTL = language === 'ar'
 
@@ -23,7 +20,7 @@ export default function ClientLayoutWrapper({ children }: ClientLayoutWrapperPro
     const loadTranslation = async () => {
       try {
         setIsLoading(true)
-        const translationModule = await import(`@/app/translations/${language}.json`) as { default: PortfolioJSON }
+        const translationModule = await import(`@/app/translations/${language}.json`) as { default: Translations }
         setTranslations(translationModule.default)
       } catch (error) {
         console.error(`Failed to load translations for ${language}:`, error)
@@ -52,10 +49,7 @@ export default function ClientLayoutWrapper({ children }: ClientLayoutWrapperPro
   return (
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
       <LayoutContext.Provider value={{ language, setLanguage, translations, isRTL }}>
-        {/* {isHome ? <div>{children}</div> : <div>{children}</div>} */}
-        {/* If you want to show full layout only in home: */}
         <main className="min-h-screen bg-gray-100 dark:bg-gray-900">
-          {/* {isHome ? <NormalRoute /> : <>{children}</>} */}
           {children}
         </main>
       </LayoutContext.Provider>
