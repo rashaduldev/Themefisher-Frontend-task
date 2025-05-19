@@ -8,25 +8,38 @@ const Skills = () => {
   if (!context) throw new Error("LayoutContext must be used within a LayoutContext.Provider");
 
   const { translations } = context;
-  const skills: Skill[] = translations.skills;
+
+  const direction = translations.direction || "ltr";
+  const isRtl = direction === "rtl";
+
+  const skills: Skill[] = translations.skills.skillsList;
 
   const [loaded, setLoaded] = useState<boolean>(false);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoaded(true);
-    }, 100); // slight delay for smoother initial animation
+    }, 100);
     return () => clearTimeout(timeout);
   }, []);
 
   return (
-    <section className="py-10 ml-auto max-w-[905px]">
+    <section
+      className={`py-10 max-w-[905px] ${isRtl ? "mr-auto" : "ml-auto"}`}
+      dir={direction}
+    >
       <div className="max-w-[685px]">
-        <h2 className="text-4xl font-semibold mb-6 text-left ml-2">Skills</h2>
+        <h2
+          className={`text-4xl font-semibold mb-6 ${
+            isRtl ? "text-right mr-2" : "text-left ml-2"
+          }`}
+        >
+          {translations.skills.skillsTitle || "Skills"}
+        </h2>
         <ul className="space-y-5 px-2 md:px-4">
           {skills.map((skill, idx) => (
             <li key={idx}>
-              <div className="flex justify-between mb-1">
+              <div className={`flex justify-between mb-1 ${isRtl ? "flex-row-reverse" : ""}`}>
                 <span>{skill.name}</span>
                 <span>{skill.value}%</span>
               </div>

@@ -278,3 +278,6 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none !important;
 }
+.break-inside-avoid {
+  break-inside: avoid;
+}

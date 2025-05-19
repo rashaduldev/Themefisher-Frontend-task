@@ -3,6 +3,8 @@ import Contact from "@/components/Contact";
 import Pricing from "@/components/Pricing";
 import Resume from "@/components/Resume";
 import Skills from "@/components/Skills";
+import Portfolio from "@/components/Portfolio";
+import Blog from "@/components/Blog";
 
 export default function HomePage() {
   return(
@@ -11,6 +13,8 @@ export default function HomePage() {
         <div className="max-w-[1320px] px-4 mx-auto bg-[#171B1A] dark:bg-zinc-900 text-white">
           <Resume/>
           <Skills/>
+          <Portfolio/>
+          <Blog/>
           <Pricing/>
           <Contact/>
         </div>

@@ -41,13 +41,16 @@
       "description": "Built responsive React components..."
     }
   ],
-   "skills": [
-    { "name": "UI/UX Design", "value": 95 },
-    { "name": "Photography", "value": 90 },
-    { "name": "Creativity", "value": 80 },
-    { "name": "Team Work", "value": 95 },
-    { "name": "Web Design", "value": 95 }
-  ],
+  "skills": {
+    "skillsTitle": "Skills",
+    "skillsList": [
+      { "name": "UI/UX Design", "value": 95 },
+      { "name": "Photography", "value": 90 },
+      { "name": "Creativity", "value": 80 },
+      { "name": "Team Work", "value": 95 },
+      { "name": "Web Design", "value": 95 }
+    ]
+  },
   "contactForm": {
     "heading": "Contact",
     "firstName": "First name",
@@ -124,5 +127,74 @@
         ]
       }
     ]
+  },
+ "blog": [
+  {
+    "id": 1,
+    "category": "Photography",
+    "date": "28 Apr 2022",
+    "title": "The artist vocation is to send light into the human heart.",
+    "description": "Photography captures fleeting moments, emotions, and stories through light and composition. It's a powerful medium that allows us to preserve memories and see the world from new perspectives.",
+    "author": "Daryl Smith",
+    "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/a2oigomwmd2pdsmo0td2.png"
+  },
+  {
+    "id": 2,
+    "category": "Adventure",
+    "date": "28 Apr 2022",
+    "title": "The mission of art is to represent nature not to imitate her.",
+    "description": "Adventure fuels the soul with excitement, courage, and discovery. Whether it's mountains or oceans, every journey shapes our identity and challenges our understanding of the world around us.",
+    "author": "Daryl Smith",
+    "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/oaziena98yftl75ohqr0.png"
+  },
+  {
+    "id": 3,
+    "category": "Graphic design",
+    "date": "28 Apr 2022",
+    "title": "There are countless versions of lorem ipsum, the most famous.",
+    "description": "Graphic design combines creativity and strategy to communicate ideas visually. It builds brand identity, guides users, and adds aesthetic value to digital and print experiences across platforms.",
+    "author": "Sarah Connor",
+    "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/bpyhuzxu9r2ujrbkayzf.png"
+  },
+  {
+    "id": 4,
+    "category": "Travel",
+    "date": "28 Apr 2022",
+    "title": "The mission of art is to represent nature not to imitate her.",
+    "description": "Travel opens minds, connects cultures, and inspires growth. It teaches empathy, showcases natural beauty, and enriches life with unforgettable experiences that shape who we are and how we think.",
+    "author": "Daryl Smith",
+    "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/x9nxja2xocuods9vq4tj.png"
+  },
+  {
+    "id": 5,
+    "category": "UI/UX Design",
+    "date": "12 May 2022",
+    "title": "Design is intelligence made visible.",
+    "description": "UI/UX design focuses on user experience, functionality, and interface clarity. It ensures digital products are accessible, engaging, and solve user needs through intuitive layouts and thoughtful interaction.",
+    "author": "Alex Johnson",
+    "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/z3kep5xezglcufkxke08.png"
+  },
+  {
+    "id": 6,
+    "category": "Web Development",
+    "date": "15 Jun 2022",
+    "title": "The best way to predict the future is to invent it.",
+    "description": "Web development builds interactive digital spaces using code, logic, and design. Developers create responsive, secure, and scalable websites that bring businesses online and enhance user experience globally.",
+    "author": "Sarah Connor",
+    "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/fd6nwxcl1ajdrdmiauvn.png"
   }
+],
+  "portfolio": {
+  "heading": "Portfolio",
+  "projects": [
+    {
+      "title": "Project One",
+      "description": "Description for project one"
+    },
+    {
+      "title": "Project Two",
+      "description": "Description for project two"
+    }
+  ]
+}
 }

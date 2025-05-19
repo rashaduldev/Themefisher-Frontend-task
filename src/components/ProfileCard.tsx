@@ -64,42 +64,49 @@ export default function ProfileCard() {
     >
       <div className="w-full max-w-[1320px]">
         {/* Topbar */}
-        <div className="w-full grid grid-cols-[44px_1fr] md:grid-cols-[44px_300px_1fr] bg-[#121414] dark:bg-zinc-900 border-b border-zinc-800 text-white px-4 sm:px-6">
-          <div></div>
-          <div className="relative flex">
-            <div className="flex flex-col justify-center pr-4 py-3 md:pr-6 md:py-4 w-full">
-              <h1 className="text-[18px] sm:text-[20px] md:text-[22px] font-semibold">
-                Daryl<span className="text-yellow-400"> Smith</span>
-              </h1>
-              <p className="text-xs sm:text-sm text-gray-400">UI/UX designer</p>
-            </div>
-            <div className="hidden md:block absolute right-0 top-0 bottom-0 w-px bg-zinc-700" />
-          </div>
-          <div className="flex items-center justify-between pl-4 md:pl-6 py-3 md:py-4 flex-wrap gap-3">
-            <div className="flex items-center gap-2">
-              <MdHome className="bg-gradient-to-r from-[#F5BD4D] to-[#F89222] text-xl md:text-2xl rounded p-1 text-white" />
-              <span className="text-base md:text-lg">Home</span>
-            </div>
-            <div className="flex items-center gap-3 sm:gap-4">
-              <button
-                onClick={() => setDarkMode(!darkMode)}
-                aria-label="Toggle dark mode"
-                className="text-lg md:text-xl text-yellow-400 hover:text-yellow-300 transition"
-              >
-                {darkMode ? <BsSunFill /> : <BsMoonFill />}
-              </button>
-              <a
-                href="/assets/Resume of Md Rashadul Islam.pdf"
-                download="Resume of Md Rashadul Islam.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black px-3 py-1 md:px-4 md:py-1.5 rounded-full font-medium text-xs md:text-sm"
-              >
-                Talk To Me
-              </a>
-            </div>
-          </div>
-        </div>
+        {/* Topbar */}
+      {/* Topbar */}
+<div className="w-full bg-[#121414] dark:bg-zinc-900 border-b border-zinc-800 px-5 py-3 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-0">
+  {/* Left: Name & Role */}
+  <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3 flex-grow min-w-0">
+    <h1 className="text-white text-lg sm:text-xl font-semibold truncate">
+      Daryl <span className="text-yellow-400">Smith</span>
+    </h1>
+    <p className="text-gray-400 text-sm whitespace-nowrap">
+      UI/UX Designer
+    </p>
+  </div>
+
+  {/* Right: Controls */}
+  <div className="flex items-center gap-5 flex-wrap justify-end min-w-0">
+    <button
+      type="button"
+      aria-label="Go to Home"
+      className="flex items-center gap-1 text-yellow-400 hover:text-yellow-300 transition text-sm sm:text-base font-medium whitespace-nowrap"
+    >
+      <MdHome className="text-xl sm:text-2xl" />
+      <span className="hidden sm:inline">Home</span>
+    </button>
+
+    <button
+      onClick={() => setDarkMode(!darkMode)}
+      aria-label="Toggle dark mode"
+      className="text-yellow-400 hover:text-yellow-300 transition text-xl sm:text-2xl"
+    >
+      {darkMode ? <BsSunFill /> : <BsMoonFill />}
+    </button>
+
+    <a
+      href="/assets/Resume of Md Rashadul Islam.pdf"
+      download="Resume of Md Rashadul Islam.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block bg-gradient-to-r from-[#F5BD4D] to-[#F89222] hover:opacity-90 text-black font-semibold text-sm sm:text-base rounded-full px-4 py-1.5 whitespace-nowrap transition"
+    >
+      Talk To Me
+    </a>
+  </div>
+</div>
 
         {/* Main layout */}
         <div className="bg-[#171B1A] dark:bg-zinc-900 grid grid-cols-1 md:grid-cols-[auto_68px_300px_1fr_68px_auto]">

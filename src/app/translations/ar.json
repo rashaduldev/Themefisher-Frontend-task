@@ -1,30 +1,30 @@
 {
   "PROFILE": {
     "INTRODUCTION": "مقدمة",
-    "CREATIVE_ROLE": "أنا مطور إبداعي وخبير في تصميم واجهات المستخدم وتجربة المستخدم",
+    "CREATIVE_ROLE": "أنا مطور إبداعي وخبير تصميم واجهات المستخدم وتجربة المستخدم",
     "DOWNLOAD_CV": "تحميل السيرة الذاتية",
-    "TALK_TO_ME": "تحدث إليّ"
+    "TALK_TO_ME": "تحدث إلي"
   },
   "info": {
     "name": "داريل سميث",
-    "profession": "مصمم UI/UX",
+    "profession": "مصمم واجهات المستخدم وتجربة المستخدم",
     "age": "24 سنة",
     "author": "روبرت سميث",
     "location": "لندن، المملكة المتحدة",
-    "description": "مطور ويب كامل متمرس ومتحمس للبيانات وتحسين الأداء. أنشأ 25 ميزة جديدة سنويًا لشركة Flexor. قلل من إعادة العمل بنسبة 22٪ والتكاليف بنسبة 15٪. حصل دائمًا على تقييمات عالية من حيث تجربة المستخدم. أحد مواقعي حصل على جائزة Webby لعام 2020 لأفضل تنقل وهيكل."
+    "description": "مطور ويب شامل ومبدع لديه شغف بالمقاييس وتجاوز الأرقام القياسية السابقة. ابتكر 25 ميزة جديدة سنويًا لـ Flexor, Inc. قلل من إعادة العمل بنسبة 22% والتكاليف بنسبة 15%. حصل على تقييمات عالية لتجربة المستخدم في جميع مشاريع الويب، بما في ذلك زيادة بنسبة 55% لشركة Flexor. شغوف ببناء تطبيقات ويب عالمية المستوى. حصل أحد مواقعي على جائزة Webby لعام 2020 لأفضل تنقل وبنية."
   },
   "education": [
     {
       "period": "2016–2020",
       "university": "جامعة هارفارد",
       "degree": "بكالوريوس وماجستير في علوم الحاسوب",
-      "description": "درست المواضيع الأساسية والمتقدمة في علوم الحاسوب..."
+      "description": "درست مواضيع أساسية ومتقدمة في علوم الحاسوب..."
     },
     {
       "period": "2014–2016",
       "university": "جامعة حلوان",
-      "degree": "بكالوريوس",
-      "description": "التركيز على البرمجة الأساسية وهياكل البيانات..."
+      "degree": "درجة البكالوريوس",
+      "description": "ركزت على البرمجة الأساسية وهياكل البيانات..."
     }
   ],
   "workHistory": [
@@ -32,47 +32,50 @@
       "period": "2021–الآن",
       "company": "Google",
       "role": "مهندس برمجيات أول",
-      "description": "العمل على تطبيقات الواجهة الأمامية القابلة للتوسع..."
+      "description": "عملت على تطبيقات الواجهة الأمامية القابلة للتوسع..."
     },
     {
       "period": "2020–2021",
       "company": "Facebook",
-      "role": "مطور Frontend",
-      "description": "بناء مكونات React متجاوبة..."
+      "role": "مطوّر واجهة أمامية",
+      "description": "بنيت مكونات React متجاوبة..."
     }
   ],
-  "skills": [
-    { "name": "تصميم UI/UX", "value": 95 },
-    { "name": "التصوير الفوتوغرافي", "value": 90 },
-    { "name": "الإبداع", "value": 80 },
-    { "name": "العمل الجماعي", "value": 95 },
-    { "name": "تصميم الويب", "value": 95 }
-  ],
+  "skills": {
+    "skillsTitle": "المهارات",
+    "skillsList": [
+      { "name": "تصميم واجهات المستخدم وتجربة المستخدم", "value": 95 },
+      { "name": "التصوير الفوتوغرافي", "value": 90 },
+      { "name": "الإبداع", "value": 80 },
+      { "name": "العمل الجماعي", "value": 95 },
+      { "name": "تصميم الويب", "value": 95 }
+    ]
+  },
   "contactForm": {
-    "heading": "تواصل",
+    "heading": "اتصل",
     "firstName": "الاسم الأول",
     "lastName": "اسم العائلة",
     "email": "البريد الإلكتروني",
     "phone": "الهاتف",
     "message": "رسالة",
-    "sendButton": "إرسال الرسالة"
+    "sendButton": "أرسل الرسالة"
   },
   "pricing": {
     "heading": "الأسعار",
-    "month": "شهريًا",
+    "month": "شهرياً",
     "button": "ابدأ الآن",
     "plans": [
       {
-        "title": "مقدمة",
+        "title": "مبتدئ",
         "price": "$29",
         "features": [
           { "label": "تصميم الواجهة", "available": true },
-          { "label": "كود الواجهة الأمامية", "available": true },
+          { "label": "البرمجة الأمامية", "available": true },
           { "label": "تطوير الخلفية", "available": true },
           { "label": "تحسين محركات البحث", "available": false },
           { "label": "دعم رائع", "available": false },
           { "label": "موقع متجاوب", "available": true },
-          { "label": "سهل الاستخدام", "available": false },
+          { "label": "سهولة الاستخدام", "available": false },
           { "label": "موقع مفيد", "available": true },
           { "label": "ويب سريع", "available": false }
         ]
@@ -82,12 +85,12 @@
         "price": "$49",
         "features": [
           { "label": "تصميم الواجهة", "available": true },
-          { "label": "كود الواجهة الأمامية", "available": true },
+          { "label": "البرمجة الأمامية", "available": true },
           { "label": "تطوير الخلفية", "available": true },
           { "label": "تحسين محركات البحث", "available": true },
           { "label": "دعم رائع", "available": false },
           { "label": "موقع متجاوب", "available": true },
-          { "label": "سهل الاستخدام", "available": false },
+          { "label": "سهولة الاستخدام", "available": false },
           { "label": "موقع مفيد", "available": true },
           { "label": "ويب سريع", "available": false }
         ]
@@ -98,30 +101,99 @@
         "featured": true,
         "features": [
           { "label": "تصميم الواجهة", "available": true },
-          { "label": "كود الواجهة الأمامية", "available": true },
+          { "label": "البرمجة الأمامية", "available": true },
           { "label": "تطوير الخلفية", "available": true },
           { "label": "تحسين محركات البحث", "available": true },
           { "label": "دعم رائع", "available": true },
           { "label": "موقع متجاوب", "available": true },
-          { "label": "سهل الاستخدام", "available": false },
+          { "label": "سهولة الاستخدام", "available": false },
           { "label": "موقع مفيد", "available": true },
           { "label": "ويب سريع", "available": false }
         ]
       },
       {
-        "title": "مؤسسة",
+        "title": "شركة",
         "price": "$199",
         "features": [
           { "label": "تصميم الواجهة", "available": true },
-          { "label": "كود الواجهة الأمامية", "available": true },
+          { "label": "البرمجة الأمامية", "available": true },
           { "label": "تطوير الخلفية", "available": true },
           { "label": "تحسين محركات البحث", "available": true },
           { "label": "دعم رائع", "available": true },
           { "label": "موقع متجاوب", "available": true },
-          { "label": "سهل الاستخدام", "available": true },
+          { "label": "سهولة الاستخدام", "available": true },
           { "label": "موقع مفيد", "available": true },
           { "label": "ويب سريع", "available": true }
         ]
+      }
+    ]
+  },
+  "blog": [
+    {
+      "id": 1,
+      "category": "تصوير",
+      "date": "28 أبريل 2022",
+      "title": "مهمة الفنان هي إرسال الضوء إلى قلب الإنسان.",
+      "description": "يلتقط التصوير اللحظات العابرة والمشاعر والقصص من خلال الضوء والتركيب. إنه وسيلة قوية تتيح لنا الحفاظ على الذكريات ورؤية العالم من زوايا جديدة.",
+      "author": "داريل سميث",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/a2oigomwmd2pdsmo0td2.png"
+    },
+    {
+      "id": 2,
+      "category": "مغامرة",
+      "date": "28 أبريل 2022",
+      "title": "مهمة الفن هي تمثيل الطبيعة وليس تقليدها.",
+      "description": "تغذي المغامرة الروح بالإثارة والشجاعة والاكتشاف. كل رحلة تشكل هويتنا وتتحدى فهمنا للعالم من حولنا.",
+      "author": "داريل سميث",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/oaziena98yftl75ohqr0.png"
+    },
+    {
+      "id": 3,
+      "category": "تصميم جرافيكي",
+      "date": "28 أبريل 2022",
+      "title": "هناك العديد من نسخ لوريم إيبسوم، أشهرها...",
+      "description": "يجمع التصميم الجرافيكي بين الإبداع والاستراتيجية لنقل الأفكار بصريًا. يبني هوية العلامة التجارية ويوجه المستخدمين ويضيف قيمة جمالية للتجارب الرقمية والمطبوعة.",
+      "author": "سارة كونور",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/bpyhuzxu9r2ujrbkayzf.png"
+    },
+    {
+      "id": 4,
+      "category": "سفر",
+      "date": "28 أبريل 2022",
+      "title": "مهمة الفن هي تمثيل الطبيعة وليس تقليدها.",
+      "description": "يفتح السفر العقول ويربط الثقافات ويحفز النمو. يعلم التعاطف ويعرض الجمال الطبيعي ويثري الحياة بتجارب لا تُنسى.",
+      "author": "داريل سميث",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/x9nxja2xocuods9vq4tj.png"
+    },
+    {
+      "id": 5,
+      "category": "تصميم واجهات المستخدم وتجربة المستخدم",
+      "date": "12 مايو 2022",
+      "title": "التصميم هو الذكاء المرئي.",
+      "description": "يركز تصميم واجهات وتجربة المستخدم على تجربة المستخدم والوظائف ووضوح الواجهة لضمان منتجات رقمية جذابة وسهلة الاستخدام.",
+      "author": "أليكس جونسون",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/z3kep5xezglcufkxke08.png"
+    },
+    {
+      "id": 6,
+      "category": "تطوير الويب",
+      "date": "15 يونيو 2022",
+      "title": "أفضل طريقة للتنبؤ بالمستقبل هي اختراعه.",
+      "description": "يبني تطوير الويب مساحات رقمية تفاعلية باستخدام التعليمات البرمجية والتصميم. ينشئ المطورون مواقع ويب آمنة وقابلة للتوسع وتجربة مستخدم عالمية.",
+      "author": "سارة كونور",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/fd6nwxcl1ajdrdmiauvn.png"
+    }
+  ],
+  "portfolio": {
+    "heading": "أعمالي",
+    "projects": [
+      {
+        "title": "المشروع الأول",
+        "description": "الوصف للمشروع الأول"
+      },
+      {
+        "title": "المشروع الثاني",
+        "description": "الوصف للمشروع الثاني"
       }
     ]
   }

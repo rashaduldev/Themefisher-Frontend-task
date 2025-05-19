@@ -40,7 +40,7 @@ const Pricing = () => {
                 {plan.price} <span className="text-base font-normal">/ {t.month}</span>
               </div>
 
-              <ul className="my-6 space-y-2 text-sm text-gray-200">
+              <ul className="my-6 space-y-2 text-sm text-gray-200 bg-[#121414] p-4 rounded-lg">
                 {plan.features.map((feature, idx) => (
                   <li
                     key={idx}
@@ -53,7 +53,7 @@ const Pricing = () => {
                 ))}
               </ul>
 
-              <button className="w-[140px] py-2 rounded-md font-semibold border border-yellow-500 text-yellow-400 hover:bg-yellow-500 hover:text-black transition">
+              <button className="w-[140px] cursor-pointer py-2 rounded-md font-semibold border border-yellow-500 text-yellow-400 hover:bg-yellow-500 hover:text-black transition">
                 {t.button}
               </button>
             </div>

@@ -1,17 +1,42 @@
 export interface Translations {
+  direction?: "ltr" | "rtl";
   PROFILE: ProfileTranslations;
   info: InfoData;
   education: EducationItem[];
   workHistory: WorkHistoryItem[];
-  skills: Skill[];
-  contactForm:FormData;
+  skills: {
+    skillsTitle: string;
+    skillsList: Skill[];
+  };
+  contactForm: FormData;
   pricing: {
     heading: string;
     month: string;
     button: string;
     plans: Plan[];
   };
+  blog: BlogItem[];
 }
+
+export interface BlogItem {
+  id: number;
+  category: string;
+  date: string;
+  title: string;
+  description: string;
+  author: string;
+  image: string;
+}
+
+export interface PortfolioItem {
+  id: number;
+  category: string;
+  title: string;
+  description: string;
+  image?: string;
+  live?: string;
+  static?: boolean;
+};
 
 export interface ProfileTranslations {
   INTRODUCTION: string;

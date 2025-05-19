@@ -10,47 +10,52 @@ export default function Resume() {
   const context = useContext(LayoutContext);
   if (!context) throw new Error("LayoutContext must be used within a LayoutContext.Provider");
 
-  const { translations } = context;
+  const { translations, isRTL } = context;
   const educationData = translations.education;
   const workHistoryData = translations.workHistory;
 
   return (
-   <section className="py-10">
-    <div className="max-w-[905px] ml-auto">
-      <h2 className="text-4xl font-semibold mb-6 text-left ml-2">Resume</h2>
+    <section className="py-10">
+      <div className={`max-w-[905px] ${isRTL ? "mr-auto" : "ml-auto"}`}>
+        <h2 className={`text-4xl font-semibold mb-6 ${isRTL ? "text-right mr-2" : "text-left ml-2"}`}>
+          Resume
+        </h2>
 
-      {/* Education Section */}
-      <section className="max-w-[685px] mb-14">
-        <header className="flex flex-row text-start items-center gap-2 ml-2 mb-6">
-          <FaGraduationCap className="text-yellow-500 text-2xl p-1 bg-[#333333] rounded" />
-          <h3 className="text-[24px] font-semibold">Education</h3>
-        </header>
-        <Timeline data={educationData} type="education" />
-      </section>
+        {/* Education Section */}
+        <section className="max-w-[685px] mb-14">
+          <header className={`flex items-center gap-2 mb-6 ${isRTL ? "text-left mr-2" : "ml-2"}`}>
+            <FaGraduationCap className="text-yellow-500 text-2xl p-1 bg-[#333333] rounded" />
+            <h3 className="text-[24px] font-semibold">Education</h3>
+          </header>
+          <Timeline data={educationData} type="education" isRTL={isRTL} />
+        </section>
 
-      {/* Work History Section */}
-      <section className="max-w-[685px]">
-        <header className="flex items-center gap-2 mb-6 ml-2">
-          <FaBriefcase className="text-yellow-500 text-2xl p-1 bg-[#333333] rounded" />
-          <h3 className="text-[24px] font-semibold">Work History</h3>
-        </header>
-        <Timeline data={workHistoryData} type="work" />
-      </section>
-    </div>
-  </section>
+        {/* Work History Section */}
+        <section className="max-w-[685px]">
+          <header className={`flex items-center gap-2 mb-6 ${isRTL ? "text-right mr-2" : "ml-2"}`}>
+            <FaBriefcase className="text-yellow-500 text-2xl p-1 bg-[#333333] rounded" />
+            <h3 className="text-[24px] font-semibold">Work History</h3>
+          </header>
+          <Timeline data={workHistoryData} type="work" isRTL={isRTL} />
+        </section>
+      </div>
+    </section>
   );
 }
 
 type TimelineProps = {
   data: EducationItem[] | WorkHistoryItem[];
   type: "education" | "work";
+  isRTL: boolean;
 };
 
-function Timeline({ data, type }: TimelineProps) {
+function Timeline({ data, type, isRTL }: TimelineProps) {
   return (
-    <div className="relative pl-10">
+    <div className={`relative ${isRTL ? "pr-10" : "pl-10"}`}>
       {/* Decorative double bar */}
-      <div className="absolute left-4 top-0 bottom-0 flex flex-col items-center z-0 border-y rounded-full border-gray-600 -mt-2.5">
+      <div
+        className={`absolute ${isRTL ? "right-4" : "left-4"} top-0 bottom-0 flex flex-col items-center z-0 border-y rounded-full border-gray-600 -mt-2.5`}
+      >
         <div className="relative flex flex-col items-center h-full">
           <div className="flex gap-[3px] h-full">
             <div className="w-[2px] bg-[#646464]" />
@@ -65,7 +70,11 @@ function Timeline({ data, type }: TimelineProps) {
           className="mb-12 relative z-10 animate-fadeInUp transition-opacity duration-700 ease-out"
           style={{ animationDelay: `${index * 0.1}s` }}
         >
-          <div className="absolute -left-[29px] top-0 flex items-center justify-center">
+          <div
+            className={`absolute top-0 flex items-center justify-center ${
+              isRTL ? "-right-[29px]" : "-left-[29px]"
+            }`}
+          >
             <div className="absolute w-3 h-3 bg-black rounded-full z-0" />
             <RiPokerDiamondsLine className="rotate-90 text-[16px] text-gray-600 relative z-10" />
           </div>
@@ -74,10 +83,12 @@ function Timeline({ data, type }: TimelineProps) {
             {item.period}
           </span>
 
-          <div className="bg-[#121414] p-4 rounded-md shadow-md transition-all duration-300 border border-transparent hover:border-gray-500 hover:shadow-yellow-500/20">
-           <h4
-              className="text-[18px] font-semibold bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent"
-            >
+          <div
+            className={`bg-[#121414] p-4 rounded-md shadow-md transition-all duration-300 border border-transparent hover:border-gray-500 hover:shadow-yellow-500/20 ${
+              isRTL ? "text-right" : "text-left"
+            }`}
+          >
+            <h4 className="text-[18px] font-semibold bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent">
               {type === "education"
                 ? (item as EducationItem).university
                 : (item as WorkHistoryItem).company}

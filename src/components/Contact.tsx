@@ -2,6 +2,7 @@
 
 import { useContext, useState } from "react";
 import { LayoutContext } from "./context";
+import toast, { Toaster } from "react-hot-toast";
 
 type FormData = {
   firstName: string;
@@ -34,8 +35,37 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    const { firstName, lastName, email, phone, message } = formData;
+
+    if (!firstName || !lastName || !email || !phone || !message) {
+      toast.error("Please fill in all required fields.");
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      toast.error("Please enter a valid email address.");
+      return;
+    }
+
+    const phoneRegex = /^[0-9+\-()\s]{6,20}$/;
+    if (!phoneRegex.test(phone)) {
+      toast.error("Please enter a valid phone number.");
+      return;
+    }
+
+    toast.success("Message sent successfully!");
+
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
+
     console.log("Submitted:", formData);
-    // Add toast or alert here if needed
   };
 
   return (
@@ -131,6 +161,9 @@ const Contact = () => {
           </div>
         </form>
       </div>
+
+      {/* Toast notifications */}
+      <Toaster position="top-right" reverseOrder={false} />
     </section>
   );
 };
