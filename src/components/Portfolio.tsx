@@ -104,22 +104,22 @@ const Portfolio = () => {
       : dynamicItems.filter((item) => item.category === active);
 
   return (
-    <section className="py-10 px-4 sm:px-6 lg:px-0 ml-auto max-w-[1120px] w-full">
-      <div className="max-w-[695px] mx-auto">
-        <h2 className="text-4xl font-semibold mb-8 text-white text-center sm:text-left">
+    <section className="py-10 px-4 sm:px-6 lg:px-0 ml-auto max-w-[950px] w-full">
+      <div className="max-w-[688px] mx-auto">
+        <h2 className="font-bold text-[48px] leading-[100%] tracking-[0%] mb-8 text-white text-center sm:text-left">
           Portfolio
         </h2>
-
         {/* Category Filter */}
         <nav
-          className="mb-8 flex flex-wrap gap-4 bg-black rounded-lg overflow-x-auto"
+          className="mb-8 flex max-w-[674px] flex-wrap gap-4 pl-10 bg-black rounded-[6px] overflow-x-auto min-h-[60px]"
+          style={{ boxShadow: "0px 10px 25px 0px #FFFFFF17" }}
           aria-label="Portfolio Categories"
         >
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setActive(cat)}
-              className={`text-[16px] p-3 whitespace-nowrap cursor-pointer ${
+              className={`font-normal text-[16px] leading-[100%] tracking-[0%] p-3 whitespace-nowrap cursor-pointer ${
                 active === cat
                   ? "border-b-2 text-yellow-300 border-b-yellow-300"
                   : "text-white border-white/20"
@@ -131,12 +131,11 @@ const Portfolio = () => {
             </button>
           ))}
         </nav>
-
         {/* Dynamic Items */}
-        <div className="columns-1 sm:columns-2 gap-4 space-y-4">
+        <div className="columns-1 sm:columns-2 gap-4 space-y-4 max-w-[674px]">
           {filtered.map((item) => (
             <div key={item.id} className="break-inside-avoid">
-              <div className="relative group overflow-hidden rounded-md border border-black bg-black">
+              <div className="relative group overflow-hidden bg-black">
                 <img
                   src={item.image}
                   alt={item.title}
@@ -144,19 +143,21 @@ const Portfolio = () => {
                 />
 
                 {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-black bg-opacity-100 opacity-0 group-hover:opacity-60 transition-opacity duration-300 flex flex-col justify-center items-center text-white p-4">
+                <div className="absolute inset-0 bg-black bg-opacity-100 opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex flex-col justify-center items-center text-white p-4">
                   <a
                     href={item.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="absolute top-2 right-2 text-white bg-gray-600 rounded-full p-2 hover:text-gray-300"
+                    className="absolute top-2 right-2 z-10 text-white bg-[#000000] rounded-full p-2 hover:text-gray-300"
                   >
                     <FaLink />
                   </a>
-                  <h3 className="text-lg font-semibold mb-2 text-center">
+                  <h3 className="font-bold text-[20px] leading-[100%] tracking-[0%] text-center mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-sm text-center">{item.description}</p>
+                  <p className="font-normal text-[16px] leading-[100%] tracking-[0%] text-center">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             </div>
@@ -164,11 +165,11 @@ const Portfolio = () => {
         </div>
 
         {/* Static Items */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 max-w-[674px]">
           {staticItems.map((item) => (
             <div
               key={item.id}
-              className="bg-black rounded-md p-6 text-white relative flex flex-col justify-center items-center"
+              className="bg-black rounded-md p-6 max-h-[204px] max-w-[332px] text-white relative flex flex-col justify-center items-center"
               style={{ height: 300 }}
             >
               <h3 className="text-lg font-semibold mb-2">{item.title}</h3>

@@ -5,7 +5,10 @@ import { Skill } from "@/types/translations";
 
 const Skills = () => {
   const context = useContext(LayoutContext);
-  if (!context) throw new Error("LayoutContext must be used within a LayoutContext.Provider");
+  if (!context)
+    throw new Error(
+      "LayoutContext must be used within a LayoutContext.Provider"
+    );
 
   const { translations } = context;
 
@@ -25,12 +28,12 @@ const Skills = () => {
 
   return (
     <section
-      className={`py-10 max-w-[905px] ${isRtl ? "mr-auto" : "ml-auto"}`}
+      className={`py-10 max-w-[835px] ${isRtl ? "mr-auto" : "ml-auto"}`}
       dir={direction}
     >
-      <div className="max-w-[685px]">
+      <div className="max-w-[706px]">
         <h2
-          className={`text-4xl font-semibold mb-6 ${
+          className={`font-bold text-[48px] leading-[100%] tracking-[0%] mb-6 ${
             isRtl ? "text-right mr-2" : "text-left ml-2"
           }`}
         >
@@ -39,24 +42,49 @@ const Skills = () => {
         <ul className="space-y-5 px-2 md:px-4">
           {skills.map((skill, idx) => (
             <li key={idx}>
-              <div className={`flex justify-between mb-1 ${isRtl ? "flex-row-reverse" : ""}`}>
-                <span>{skill.name}</span>
-                <span>{skill.value}%</span>
+              <div
+                className={`flex justify-between mb-1 ${
+                  isRtl ? "flex-row-reverse" : ""
+                }`}
+              >
+                <span className="font-medium text-[24px] leading-[120%] tracking-[0%] mb-2">
+                  {skill.name}
+                </span>
+                <span
+                  className="font-medium text-[20px] leading-[120%] text-center"
+                  style={{
+                    background: "linear-gradient(to right, #F5BD4D, #F89222)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                  }}
+                >
+                  {skill.value}%
+                </span>
               </div>
               <div
-                className="w-full bg-gray-800 h-2 rounded-full overflow-hidden"
+                className="bg-[#5b3f1d] max-w-[670px] overflow-hidden"
+                style={{
+                  width: "685px",
+                  height: "16px",
+                  borderRadius: "25px",
+                }}
                 role="progressbar"
                 aria-valuenow={skill.value}
                 aria-valuemin={0}
                 aria-valuemax={100}
               >
                 <div
-                  className="h-2 rounded-full transition-all duration-[1500ms] ease-in-out"
+                  className="h-full rounded-full transition-all duration-[1500ms] ease-in-out flex items-center justify-center text-white"
                   style={{
                     width: loaded ? `${skill.value}%` : "0%",
                     background: "linear-gradient(to right, #F5BD4D, #F89222)",
+                    fontWeight: 500,
+                    fontSize: "20px",
+                    lineHeight: "120%",
+                    letterSpacing: "0%",
+                    textAlign: "center",
                   }}
-                />
+                ></div>
               </div>
             </li>
           ))}

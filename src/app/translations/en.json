@@ -18,27 +18,27 @@
       "period": "2016–2020",
       "university": "Harvard University",
       "degree": "B.A. and M.S., Computer Science",
-      "description": "Studied core and advanced computer science topics..."
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi earum eligendi ipsum, laborum maiores mollitia, optio quam quis rerum totam voluptas."
     },
     {
       "period": "2014–2016",
       "university": "Helwan University",
       "degree": "Bachelor Degree",
-      "description": "Focused on foundational programming and data structures..."
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi earum eligendi ipsum, laborum maiores mollitia, optio quam quis rerum totam voluptas."
     }
   ],
   "workHistory": [
     {
       "period": "2021–Present",
-      "company": "Google",
-      "role": "Senior Software Engineer",
-      "description": "Worked on scalable front-end applications..."
+      "company": "UI/UX design",
+      "role": "Web site design",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi earum eligendi ipsum, laborum maiores mollitia, optio quam quis rerum totam voluptas."
     },
     {
       "period": "2020–2021",
-      "company": "Facebook",
-      "role": "Frontend Developer",
-      "description": "Built responsive React components..."
+      "company": "Junior Web designers",
+      "role": "Product designer",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi earum eligendi ipsum, laborum maiores mollitia, optio quam quis rerum totam voluptas."
     }
   ],
   "skills": {
