@@ -6,13 +6,19 @@
     "TALK_TO_ME": "Talk To Me"
   },
   "info": {
-    "name": "Daryl Smith",
+    "firstname": "Daryl",
+    "lastname": "Smith",
     "profession": "UI/UX designer",
     "age": "24 years",
     "author": "Robert Smith",
+    "home": "Home",
+    "talk_to_me": "Talk To Me",
+    "copy_right": "© design by themefisher developed by gethugothemes",
     "location": "UK London",
     "description": "Prolific, full stack web developer with a passion for metrics and beating former \"best-yets\". Prototyped 25 new product features per year for Flexor, Inc. Decreased rework by 22% and costs by 15%. Consistently receive high user experience scores for all web development projects, including a 55% increase for Flexor, Inc. Passionate about building world class web applications. One of my sites received a 2020 Webby for Best Navigation and Structure."
   },
+  "resume": "Resume",
+  "educationTitle": "Education",
   "education": [
     {
       "period": "2016–2020",
@@ -27,6 +33,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi earum eligendi ipsum, laborum maiores mollitia, optio quam quis rerum totam voluptas."
     }
   ],
+  "workHistoryTitle": "Work History",
   "workHistory": [
     {
       "period": "2021–Present",
@@ -128,6 +135,7 @@
       }
     ]
   },
+  "blog_title":"Blog",
  "blog": [
   {
     "id": 1,
@@ -184,19 +192,86 @@
     "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/fd6nwxcl1ajdrdmiauvn.png"
   }
 ],
-  "portfolio": {
-  "heading": "Portfolio",
-  "projects": [
+  "portfolioTitle": "Portfolio",
+  "portfolioCategories": [
+    "All",
+    "Graphic Design",
+    "Mobile App",
+    "Photography",
+    "UI/UX Design"
+  ],
+  "portfolioData": [
     {
-      "title": "Project One",
-      "description": "Description for project one"
+      "id": 1,
+      "category": "Graphic Design",
+      "title": "Figma Mockup",
+      "description": "Figma mockup PSD editable",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747650966/front-end-task/grivjtwuoz7cksw1rw8b.png",
+      "live": "#"
     },
     {
-      "title": "Project Two",
-      "description": "Description for project two"
+      "id": 2,
+      "category": "Mobile App",
+      "title": "Mobile App UI",
+      "description": "Plant store mobile UI",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747650966/front-end-task/ehhihhxpoaofrd74mmfn.png",
+      "live": "#"
+    },
+    {
+      "id": 3,
+      "category": "Graphic Design",
+      "title": "Sticky Notes Design",
+      "description": "Office branding",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747650966/front-end-task/hkh7fb329mx2lfitqrph.png",
+      "live": "#"
+    },
+    {
+      "id": 4,
+      "category": "UI/UX Design",
+      "title": "Smartwatch UI",
+      "description": "Modern wearable interface",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747650966/front-end-task/ff4h2hjdfadqjeyhc7uy.png",
+      "live": "#"
+    },
+    {
+      "id": 5,
+      "category": "Graphic Design",
+      "title": "Shopping Bag Design",
+      "description": "Elegant packaging",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747650966/front-end-task/y1lo5u07ve5vk6ozwc8a.png",
+      "live": "#"
+    },
+    {
+      "id": 6,
+      "category": "Graphic Design",
+      "title": "Mug Mockup",
+      "description": "Product branding",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747650965/front-end-task/wj14cww01hups2pcfybd.png",
+      "live": "#"
+    },
+    {
+      "id": 7,
+      "category": "Photography",
+      "title": "Photography Layout",
+      "description": "Product shoot layout",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747650966/front-end-task/aucejk2fzmli1ilhdpgm.png",
+      "live": "#"
+    },
+    {
+      "id": 8,
+      "category": "UI/UX Design",
+      "title": "Website Design",
+      "description": "Fitness Studio Website",
+      "static": true
+    },
+    {
+      "id": 9,
+      "category": "Photography",
+      "title": "Photography",
+      "description": "Photography Project",
+      "static": true
     }
-  ]
-},
+  ],
  "notFound": {
     "title": "Page Not Found",
     "description": "Sorry, the page you are looking for doesn’t exist or has been moved.",

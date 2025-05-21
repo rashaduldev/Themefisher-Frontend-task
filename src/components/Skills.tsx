@@ -10,12 +10,8 @@ const Skills = () => {
       "LayoutContext must be used within a LayoutContext.Provider"
     );
 
-  const { translations } = context;
-
-  const direction = translations.direction || "ltr";
-  const isRtl = direction === "rtl";
-
-  const skills: Skill[] = translations.skills.skillsList;
+  const { translations, isRTL } = context;
+  const skills: Skill[] = translations.skills.skillsList || [];
 
   const [loaded, setLoaded] = useState<boolean>(false);
 
@@ -28,14 +24,14 @@ const Skills = () => {
 
   return (
     <section
-    id="skills"
-      className={`py-10 max-w-[835px] ${isRtl ? "mr-auto" : "ml-auto"}`}
-      dir={direction}
+      id="skills"
+      className={`py-10 max-w-[835px] ${isRTL ? "mr-auto" : "ml-auto"}`}
+      dir={isRTL ? "rtl" : "ltr"}
     >
       <div className="max-w-[706px]">
         <h2
           className={`font-bold text-[48px] leading-[100%] tracking-[0%] mb-6 ${
-            isRtl ? "text-right mr-2" : "text-left ml-2"
+            isRTL ? "text-right mr-2" : "text-left ml-2"
           }`}
         >
           {translations.skills.skillsTitle || "Skills"}
@@ -45,7 +41,7 @@ const Skills = () => {
             <li key={idx}>
               <div
                 className={`flex justify-between mb-1 ${
-                  isRtl ? "flex-row-reverse" : ""
+                  isRTL ? "flex-row" : ""
                 }`}
               >
                 <span className="font-medium text-[24px] leading-[120%] tracking-[0%] mb-2">
@@ -63,14 +59,14 @@ const Skills = () => {
                 </span>
               </div>
               <div
-                className="bg-[#5b3f1d] h-[16px] rounded-2xl max-w-[670px] overflow-hidden"
+                className="bg-[#5b3f1d] h-[16px] rounded-2xl max-w-[670px] overflow-hidden relative"
                 role="progressbar"
                 aria-valuenow={skill.value}
                 aria-valuemin={0}
                 aria-valuemax={100}
               >
                 <div
-                  className="h-full rounded-full transition-all duration-[1500ms] ease-in-out flex items-center justify-center text-white"
+                  className="h-full rounded-full transition-all duration-[1500ms] ease-in-out flex items-center justify-center text-white absolute top-0 bottom-0"
                   style={{
                     width: loaded ? `${skill.value}%` : "0%",
                     background: "linear-gradient(to right, #F5BD4D, #F89222)",
@@ -79,8 +75,10 @@ const Skills = () => {
                     lineHeight: "120%",
                     letterSpacing: "0%",
                     textAlign: "center",
+                    right: isRTL ? 0 : "auto",
+                    left: isRTL ? "auto" : 0,
                   }}
-                ></div>
+                />
               </div>
             </li>
           ))}

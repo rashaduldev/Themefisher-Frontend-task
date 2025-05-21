@@ -1,50 +1,57 @@
 {
   "PROFILE": {
     "INTRODUCTION": "مقدمة",
-    "CREATIVE_ROLE": "أنا مطور إبداعي وخبير تصميم واجهات المستخدم وتجربة المستخدم",
+    "CREATIVE_ROLE": "أنا مطور مبدع وخبير تصميم واجهة المستخدم وتجربة المستخدم",
     "DOWNLOAD_CV": "تحميل السيرة الذاتية",
-    "TALK_TO_ME": "تحدث إلي"
+    "TALK_TO_ME": "تحدث معي"
   },
   "info": {
-    "name": "داريل سميث",
-    "profession": "مصمم واجهات المستخدم وتجربة المستخدم",
+    "firstname": "داريل",
+    "lastname": "سميث",
+    "profession": "مصمم واجهة المستخدم وتجربة المستخدم",
     "age": "24 سنة",
     "author": "روبرت سميث",
-    "location": "لندن، المملكة المتحدة",
-    "description": "مطور ويب شامل ومبدع لديه شغف بالمقاييس وتجاوز الأرقام القياسية السابقة. ابتكر 25 ميزة جديدة سنويًا لـ Flexor, Inc. قلل من إعادة العمل بنسبة 22% والتكاليف بنسبة 15%. حصل على تقييمات عالية لتجربة المستخدم في جميع مشاريع الويب، بما في ذلك زيادة بنسبة 55% لشركة Flexor. شغوف ببناء تطبيقات ويب عالمية المستوى. حصل أحد مواقعي على جائزة Webby لعام 2020 لأفضل تنقل وبنية."
+    "home": "الرئيسية",
+    "talk_to_me": "تحدث معي",
+    "copy_right": "© التصميم بواسطة themefisher تم التطوير بواسطة gethugothemes",
+    "location": "المملكة المتحدة لندن",
+    "description": "مطور ويب شامل نشيط وشغوف بالبيانات وتحطيم الأرقام القياسية السابقة. قمت بتصميم 25 ميزة جديدة سنويًا لشركة Flexor, Inc. قللت من العمل المتكرر بنسبة 22٪ والتكاليف بنسبة 15٪. حصلت المشاريع على تقييمات عالية في تجربة المستخدم، بما في ذلك زيادة 55٪ لشركة Flexor, Inc. شغوف ببناء تطبيقات ويب عالمية المستوى. حصل أحد مواقعي على جائزة Webby لعام 2020 لأفضل التنقل والبنية."
   },
+  "resume": "السيرة الذاتية",
+  "educationTitle": "التعليم",
   "education": [
     {
       "period": "2016–2020",
       "university": "جامعة هارفارد",
       "degree": "بكالوريوس وماجستير في علوم الحاسوب",
-      "description": "درست مواضيع أساسية ومتقدمة في علوم الحاسوب..."
+      "description": "لوريم إيبسوم دولار سيت أميت، كونسيكتيتور أديبيسيسينغ إليت. أب أوت كومودي إيروم إيليغيندي إيبسوم، لابوروم مايوريس موليتيا، أوبتيو كوام كويز ريروم توتام فولبوتاس."
     },
     {
       "period": "2014–2016",
       "university": "جامعة حلوان",
       "degree": "درجة البكالوريوس",
-      "description": "ركزت على البرمجة الأساسية وهياكل البيانات..."
+      "description": "لوريم إيبسوم دولار سيت أميت، كونسيكتيتور أديبيسيسينغ إليت. أب أوت كومودي إيروم إيليغيندي إيبسوم، لابوروم مايوريس موليتيا، أوبتيو كوام كويز ريروم توتام فولبوتاس."
     }
   ],
+  "workHistoryTitle": "تاريخ العمل",
   "workHistory": [
     {
-      "period": "2021–الآن",
-      "company": "Google",
-      "role": "مهندس برمجيات أول",
-      "description": "عملت على تطبيقات الواجهة الأمامية القابلة للتوسع..."
+      "period": "2021–حتى الآن",
+      "company": "تصميم واجهة المستخدم وتجربة المستخدم",
+      "role": "تصميم مواقع إلكترونية",
+      "description": "لوريم إيبسوم دولار سيت أميت، كونسيكتيتور أديبيسيسينغ إليت. أب أوت كومودي إيروم إيليغيندي إيبسوم، لابوروم مايوريس موليتيا، أوبتيو كوام كويز ريروم توتام فولبوتاس."
     },
     {
       "period": "2020–2021",
-      "company": "Facebook",
-      "role": "مطوّر واجهة أمامية",
-      "description": "بنيت مكونات React متجاوبة..."
+      "company": "مصممو ويب مبتدئون",
+      "role": "مصمم منتجات",
+      "description": "لوريم إيبسوم دولار سيت أميت، كونسيكتيتور أديبيسيسينغ إليت. أب أوت كومودي إيروم إيليغيندي إيبسوم، لابوروم مايوريس موليتيا، أوبتيو كوام كويز ريروم توتام فولبوتاس."
     }
   ],
   "skills": {
     "skillsTitle": "المهارات",
     "skillsList": [
-      { "name": "تصميم واجهات المستخدم وتجربة المستخدم", "value": 95 },
+      { "name": "تصميم واجهة وتجربة المستخدم", "value": 95 },
       { "name": "التصوير الفوتوغرافي", "value": 90 },
       { "name": "الإبداع", "value": 80 },
       { "name": "العمل الجماعي", "value": 95 },
@@ -57,27 +64,27 @@
     "lastName": "اسم العائلة",
     "email": "البريد الإلكتروني",
     "phone": "الهاتف",
-    "message": "رسالة",
-    "sendButton": "أرسل الرسالة"
+    "message": "الرسالة",
+    "sendButton": "إرسال الرسالة"
   },
-  "pricing": {
-    "heading": "الأسعار",
-    "month": "شهرياً",
+    "pricing": {
+    "heading": "التسعير",
+    "month": "شهريًا",
     "button": "ابدأ الآن",
     "plans": [
       {
-        "title": "مبتدئ",
+        "title": "مقدمة",
         "price": "$29",
         "features": [
           { "label": "تصميم الواجهة", "available": true },
-          { "label": "البرمجة الأمامية", "available": true },
-          { "label": "تطوير الخلفية", "available": true },
+          { "label": "كود الواجهة الأمامية", "available": true },
+          { "label": "تطوير الواجهة الخلفية", "available": true },
           { "label": "تحسين محركات البحث", "available": false },
           { "label": "دعم رائع", "available": false },
           { "label": "موقع متجاوب", "available": true },
-          { "label": "سهولة الاستخدام", "available": false },
+          { "label": "سهل الاستخدام", "available": false },
           { "label": "موقع مفيد", "available": true },
-          { "label": "ويب سريع", "available": false }
+          { "label": "موقع سريع", "available": false }
         ]
       },
       {
@@ -85,14 +92,14 @@
         "price": "$49",
         "features": [
           { "label": "تصميم الواجهة", "available": true },
-          { "label": "البرمجة الأمامية", "available": true },
-          { "label": "تطوير الخلفية", "available": true },
+          { "label": "كود الواجهة الأمامية", "available": true },
+          { "label": "تطوير الواجهة الخلفية", "available": true },
           { "label": "تحسين محركات البحث", "available": true },
           { "label": "دعم رائع", "available": false },
           { "label": "موقع متجاوب", "available": true },
-          { "label": "سهولة الاستخدام", "available": false },
+          { "label": "سهل الاستخدام", "available": false },
           { "label": "موقع مفيد", "available": true },
-          { "label": "ويب سريع", "available": false }
+          { "label": "موقع سريع", "available": false }
         ]
       },
       {
@@ -101,76 +108,77 @@
         "featured": true,
         "features": [
           { "label": "تصميم الواجهة", "available": true },
-          { "label": "البرمجة الأمامية", "available": true },
-          { "label": "تطوير الخلفية", "available": true },
+          { "label": "كود الواجهة الأمامية", "available": true },
+          { "label": "تطوير الواجهة الخلفية", "available": true },
           { "label": "تحسين محركات البحث", "available": true },
           { "label": "دعم رائع", "available": true },
           { "label": "موقع متجاوب", "available": true },
-          { "label": "سهولة الاستخدام", "available": false },
+          { "label": "سهل الاستخدام", "available": false },
           { "label": "موقع مفيد", "available": true },
-          { "label": "ويب سريع", "available": false }
+          { "label": "موقع سريع", "available": false }
         ]
       },
       {
-        "title": "شركة",
+        "title": "مؤسسي",
         "price": "$199",
         "features": [
           { "label": "تصميم الواجهة", "available": true },
-          { "label": "البرمجة الأمامية", "available": true },
-          { "label": "تطوير الخلفية", "available": true },
+          { "label": "كود الواجهة الأمامية", "available": true },
+          { "label": "تطوير الواجهة الخلفية", "available": true },
           { "label": "تحسين محركات البحث", "available": true },
           { "label": "دعم رائع", "available": true },
           { "label": "موقع متجاوب", "available": true },
-          { "label": "سهولة الاستخدام", "available": true },
+          { "label": "سهل الاستخدام", "available": true },
           { "label": "موقع مفيد", "available": true },
-          { "label": "ويب سريع", "available": true }
+          { "label": "موقع سريع", "available": true }
         ]
       }
     ]
   },
+  "blog_title": "مدونة",
   "blog": [
     {
       "id": 1,
-      "category": "تصوير",
+      "category": "التصوير الفوتوغرافي",
       "date": "28 أبريل 2022",
       "title": "مهمة الفنان هي إرسال الضوء إلى قلب الإنسان.",
-      "description": "يلتقط التصوير اللحظات العابرة والمشاعر والقصص من خلال الضوء والتركيب. إنه وسيلة قوية تتيح لنا الحفاظ على الذكريات ورؤية العالم من زوايا جديدة.",
+      "description": "التصوير الفوتوغرافي يلتقط اللحظات العابرة، المشاعر، والقصص من خلال الضوء والتكوين. إنها وسيلة قوية تتيح لنا الحفاظ على الذكريات ورؤية العالم من منظور جديد.",
       "author": "داريل سميث",
       "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/a2oigomwmd2pdsmo0td2.png"
     },
     {
       "id": 2,
-      "category": "مغامرة",
+      "category": "المغامرة",
       "date": "28 أبريل 2022",
       "title": "مهمة الفن هي تمثيل الطبيعة وليس تقليدها.",
-      "description": "تغذي المغامرة الروح بالإثارة والشجاعة والاكتشاف. كل رحلة تشكل هويتنا وتتحدى فهمنا للعالم من حولنا.",
+      "description": "المغامرة تغذي الروح بالإثارة، الشجاعة، والاكتشاف. سواء كانت جبالاً أو محيطات، كل رحلة تشكل هويتنا وتتحدى فهمنا للعالم من حولنا.",
       "author": "داريل سميث",
       "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/oaziena98yftl75ohqr0.png"
     },
     {
       "id": 3,
-      "category": "تصميم جرافيكي",
+      "category": "التصميم الجرافيكي",
       "date": "28 أبريل 2022",
-      "title": "هناك العديد من نسخ لوريم إيبسوم، أشهرها...",
-      "description": "يجمع التصميم الجرافيكي بين الإبداع والاستراتيجية لنقل الأفكار بصريًا. يبني هوية العلامة التجارية ويوجه المستخدمين ويضيف قيمة جمالية للتجارب الرقمية والمطبوعة.",
+      "title": "هناك نسخ لا حصر لها من لوريم إيبسوم، أشهرها.",
+      "description": "التصميم الجرافيكي يجمع بين الإبداع والاستراتيجية لتوصيل الأفكار بصرياً. يبني هوية العلامة التجارية، يوجه المستخدمين، ويضيف قيمة جمالية للتجارب الرقمية والمطبوعة عبر المنصات.",
       "author": "سارة كونور",
       "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/bpyhuzxu9r2ujrbkayzf.png"
     },
     {
       "id": 4,
-      "category": "سفر",
+      "category": "السفر",
       "date": "28 أبريل 2022",
       "title": "مهمة الفن هي تمثيل الطبيعة وليس تقليدها.",
-      "description": "يفتح السفر العقول ويربط الثقافات ويحفز النمو. يعلم التعاطف ويعرض الجمال الطبيعي ويثري الحياة بتجارب لا تُنسى.",
+      "description": "السفر يفتح العقول، يربط الثقافات، ويلهم النمو. يعلم التعاطف، يعرض الجمال الطبيعي، ويثري الحياة بتجارب لا تُنسى تشكل من نحن وكيف نفكر.",
       "author": "داريل سميث",
       "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/x9nxja2xocuods9vq4tj.png"
     },
     {
       "id": 5,
-      "category": "تصميم واجهات المستخدم وتجربة المستخدم",
+      "category": "تصميم واجهات وتجربة المستخدم",
       "date": "12 مايو 2022",
       "title": "التصميم هو الذكاء المرئي.",
-      "description": "يركز تصميم واجهات وتجربة المستخدم على تجربة المستخدم والوظائف ووضوح الواجهة لضمان منتجات رقمية جذابة وسهلة الاستخدام.",
+      "description": "يركز تصميم واجهات وتجربة المستخدم على تجربة المستخدم، الوظائف، ووضوح الواجهة. يضمن أن المنتجات الرقمية سهلة الوصول، جذابة، وتحل احتياجات المستخدم من خلال تخطيطات بديهية وتفاعل مدروس.",
       "author": "أليكس جونسون",
       "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/z3kep5xezglcufkxke08.png"
     },
@@ -179,22 +187,94 @@
       "category": "تطوير الويب",
       "date": "15 يونيو 2022",
       "title": "أفضل طريقة للتنبؤ بالمستقبل هي اختراعه.",
-      "description": "يبني تطوير الويب مساحات رقمية تفاعلية باستخدام التعليمات البرمجية والتصميم. ينشئ المطورون مواقع ويب آمنة وقابلة للتوسع وتجربة مستخدم عالمية.",
+      "description": "بناء مواقع الويب يستخدم الأكواد، المنطق، والتصميم لإنشاء مساحات رقمية تفاعلية. يطور المطورون مواقع متجاوبة، آمنة، وقابلة للتوسع تجلب الأعمال عبر الإنترنت وتحسن تجربة المستخدم عالمياً.",
       "author": "سارة كونور",
       "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/fd6nwxcl1ajdrdmiauvn.png"
     }
   ],
-  "portfolio": {
-    "heading": "أعمالي",
-    "projects": [
-      {
-        "title": "المشروع الأول",
-        "description": "الوصف للمشروع الأول"
-      },
-      {
-        "title": "المشروع الثاني",
-        "description": "الوصف للمشروع الثاني"
-      }
-    ]
+  "portfolioTitle": "المعرض",
+  "portfolioCategories": [
+    "الكل",
+    "التصميم الجرافيكي",
+    "تطبيقات الجوال",
+    "التصوير الفوتوغرافي",
+    "تصميم واجهات وتجربة المستخدم"
+  ],
+  "portfolioData": [
+    {
+      "id": 1,
+      "category": "التصميم الجرافيكي",
+      "title": "نماذج فيجما",
+      "description": "نموذج PSD قابل للتحرير",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747650966/front-end-task/grivjtwuoz7cksw1rw8b.png",
+      "live": "#"
+    },
+    {
+      "id": 2,
+      "category": "تطبيقات الجوال",
+      "title": "واجهة تطبيق الجوال",
+      "description": "واجهة متجر نباتات",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747650966/front-end-task/ehhihhxpoaofrd74mmfn.png",
+      "live": "#"
+    },
+    {
+      "id": 3,
+      "category": "التصميم الجرافيكي",
+      "title": "تصميم ملاحظات لاصقة",
+      "description": "العلامة التجارية للمكتب",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747650966/front-end-task/hkh7fb329mx2lfitqrph.png",
+      "live": "#"
+    },
+    {
+      "id": 4,
+      "category": "تصميم واجهات وتجربة المستخدم",
+      "title": "واجهة ساعة ذكية",
+      "description": "واجهة حديثة للأجهزة القابلة للارتداء",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747650966/front-end-task/ff4h2hjdfadqjeyhc7uy.png",
+      "live": "#"
+    },
+    {
+      "id": 5,
+      "category": "التصميم الجرافيكي",
+      "title": "تصميم حقيبة التسوق",
+      "description": "تغليف أنيق",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747650966/front-end-task/y1lo5u07ve5vk6ozwc8a.png",
+      "live": "#"
+    },
+    {
+      "id": 6,
+      "category": "التصميم الجرافيكي",
+      "title": "نماذج أكواب",
+      "description": "علامة تجارية للمنتجات",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747650965/front-end-task/wj14cww01hups2pcfybd.png",
+      "live": "#"
+    },
+    {
+      "id": 7,
+      "category": "التصوير الفوتوغرافي",
+      "title": "تصميم التصوير الفوتوغرافي",
+      "description": "تصميم تصوير المنتجات",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747650966/front-end-task/aucejk2fzmli1ilhdpgm.png",
+      "live": "#"
+    },
+    {
+      "id": 8,
+      "category": "تصميم واجهات وتجربة المستخدم",
+      "title": "تصميم موقع إلكتروني",
+      "description": "موقع استوديو اللياقة البدنية",
+      "static": true
+    },
+    {
+      "id": 9,
+      "category": "التصوير الفوتوغرافي",
+      "title": "التصوير الفوتوغرافي",
+      "description": "مشروع تصوير",
+      "static": true
+    }
+  ],
+  "notFound": {
+    "title": "الصفحة غير موجودة",
+    "description": "عذراً، الصفحة التي تبحث عنها غير موجودة أو تم نقلها.",
+    "backToHome": "العودة إلى الصفحة الرئيسية"
   }
 }

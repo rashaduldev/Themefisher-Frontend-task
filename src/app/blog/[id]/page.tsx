@@ -4,6 +4,7 @@ import React, { useEffect, useState, useContext } from "react";
 import { useParams } from "next/navigation";
 import toast, { Toaster } from "react-hot-toast";
 import { LayoutContext } from "@/components/context";
+import Image from "next/image";
 
 interface Comment {
   name: string;
@@ -75,7 +76,7 @@ const BlogDetails: React.FC = () => {
         {post.category} | {post.date} — Posted by {post.author}
       </p>
 
-      <img src={post.image} alt={post.title} className="w-full rounded-md mb-6" />
+      <Image width={500} height={500} src={post.image} alt={post.title} className="w-full rounded-md mb-6" />
 
       <p className="mb-8">{post.description}</p>
 

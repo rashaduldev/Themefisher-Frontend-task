@@ -17,6 +17,23 @@ export interface Translations {
   };
   blog: BlogItem[];
   notFound: NotFoundTranslation;
+  resume:string;
+  educationTitle: string;
+  workHistoryTitle: string;
+  blog_title: string;
+  portfolioTitle: string;
+  portfolioCategories: string[];
+  portfolioData: PortfolioItem[];
+}
+
+export interface PortfolioItem {
+  id: number;
+  category: string;
+  title: string;
+  description: string;
+  image?: string;
+  live?: string;
+  static?: boolean;
 }
 
 type NotFoundTranslation = {
@@ -34,16 +51,6 @@ export interface BlogItem {
   image: string;
 }
 
-export interface PortfolioItem {
-  id: number;
-  category: string;
-  title: string;
-  description: string;
-  image?: string;
-  live?: string;
-  static?: boolean;
-};
-
 export interface ProfileTranslations {
   INTRODUCTION: string;
   CREATIVE_ROLE: string;
@@ -52,7 +59,11 @@ export interface ProfileTranslations {
 }
 
 export interface InfoData {
-  name: string;
+  firstname: string;
+  lastname: string;
+  home: string;
+  talk_to_me: string;
+  copy_right: string;
   profession: string;
   age: string;
   author: string;

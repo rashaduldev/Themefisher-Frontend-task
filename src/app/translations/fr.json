@@ -1,44 +1,51 @@
 {
   "PROFILE": {
-    "INTRODUCTION": "INTRODUCTION",
-    "CREATIVE_ROLE": "Je suis un développeur créatif et un expert en design UI/UX",
+    "INTRODUCTION": "Introduction",
+    "CREATIVE_ROLE": "Je suis un développeur créatif & expert en design UI/UX",
     "DOWNLOAD_CV": "Télécharger le CV",
     "TALK_TO_ME": "Parlez-moi"
   },
   "info": {
-    "name": "Daryl Smith",
+    "firstname": "Daryl",
+    "lastname": "Smith",
     "profession": "Designer UI/UX",
     "age": "24 ans",
     "author": "Robert Smith",
-    "location": "Londres, Royaume-Uni",
-    "description": "Développeur web full stack prolifique avec une passion pour les métriques et l'amélioration continue. A prototypé 25 nouvelles fonctionnalités par an pour Flexor, Inc. Réduction de la reprise de 22 % et des coûts de 15 %. Reçoit systématiquement des scores élevés en expérience utilisateur, y compris une augmentation de 55 % pour Flexor, Inc. Passionné par la création d'applications web de classe mondiale. L'un de mes sites a reçu un Webby Award 2020 pour la meilleure navigation et structure."
+    "home": "Accueil",
+    "talk_to_me": "Parlez-moi",
+    "copy_right": "© design par themefisher développé par gethugothemes",
+    "location": "Royaume-Uni Londres",
+    "description": "Développeur web full stack prolifique, passionné par les métriques et surpasser les anciens records. Prototypé 25 nouvelles fonctionnalités produits par an pour Flexor, Inc. Réduit les reprises de 22% et les coûts de 15%. Reçoit constamment des scores élevés en expérience utilisateur pour tous les projets web, y compris une augmentation de 55% pour Flexor, Inc. Passionné par la création d'applications web de classe mondiale. Un de mes sites a reçu un Webby 2020 pour la meilleure navigation et structure."
   },
+  "resume": "CV",
+  "educationTitle": "Éducation",
   "education": [
     {
       "period": "2016–2020",
       "university": "Université Harvard",
       "degree": "Licence et Master en Informatique",
-      "description": "Étude des sujets fondamentaux et avancés de l'informatique..."
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi earum eligendi ipsum, laborum maiores mollitia, optio quam quis rerum totam voluptas."
     },
     {
       "period": "2014–2016",
-      "university": "Université de Helwan",
+      "university": "Université Helwan",
       "degree": "Licence",
-      "description": "Concentré sur la programmation de base et les structures de données..."
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi earum eligendi ipsum, laborum maiores mollitia, optio quam quis rerum totam voluptas."
     }
   ],
+  "workHistoryTitle": "Expérience professionnelle",
   "workHistory": [
     {
       "period": "2021–Présent",
-      "company": "Google",
-      "role": "Ingénieur logiciel senior",
-      "description": "Travail sur des applications front-end évolutives..."
+      "company": "Design UI/UX",
+      "role": "Conception de site web",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi earum eligendi ipsum, laborum maiores mollitia, optio quam quis rerum totam voluptas."
     },
     {
       "period": "2020–2021",
-      "company": "Facebook",
-      "role": "Développeur Frontend",
-      "description": "Création de composants React responsives..."
+      "company": "Jeunes designers web",
+      "role": "Designer produit",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi earum eligendi ipsum, laborum maiores mollitia, optio quam quis rerum totam voluptas."
     }
   ],
   "skills": {
@@ -47,14 +54,14 @@
       { "name": "Design UI/UX", "value": 95 },
       { "name": "Photographie", "value": 90 },
       { "name": "Créativité", "value": 80 },
-      { "name": "Travail d'équipe", "value": 95 },
-      { "name": "Conception Web", "value": 95 }
+      { "name": "Travail en équipe", "value": 95 },
+      { "name": "Design web", "value": 95 }
     ]
   },
   "contactForm": {
     "heading": "Contact",
     "firstName": "Prénom",
-    "lastName": "Nom de famille",
+    "lastName": "Nom",
     "email": "Email",
     "phone": "Téléphone",
     "message": "Message",
@@ -66,13 +73,13 @@
     "button": "Commencer",
     "plans": [
       {
-        "title": "Intro",
+        "title": "Introduction",
         "price": "$29",
         "features": [
-          { "label": "Design d'interface", "available": true },
+          { "label": "Conception d'interface", "available": true },
           { "label": "Code Front-end", "available": true },
           { "label": "Développement Back-end", "available": true },
-          { "label": "Optimisation SEO", "available": false },
+          { "label": "Optimisation pour les moteurs de recherche", "available": false },
           { "label": "Support génial", "available": false },
           { "label": "Site responsive", "available": true },
           { "label": "Facile à utiliser", "available": false },
@@ -81,13 +88,13 @@
         ]
       },
       {
-        "title": "Base",
+        "title": "Basique",
         "price": "$49",
         "features": [
-          { "label": "Design d'interface", "available": true },
+          { "label": "Conception d'interface", "available": true },
           { "label": "Code Front-end", "available": true },
           { "label": "Développement Back-end", "available": true },
-          { "label": "Optimisation SEO", "available": true },
+          { "label": "Optimisation pour les moteurs de recherche", "available": true },
           { "label": "Support génial", "available": false },
           { "label": "Site responsive", "available": true },
           { "label": "Facile à utiliser", "available": false },
@@ -100,10 +107,10 @@
         "price": "$99",
         "featured": true,
         "features": [
-          { "label": "Design d'interface", "available": true },
+          { "label": "Conception d'interface", "available": true },
           { "label": "Code Front-end", "available": true },
           { "label": "Développement Back-end", "available": true },
-          { "label": "Optimisation SEO", "available": true },
+          { "label": "Optimisation pour les moteurs de recherche", "available": true },
           { "label": "Support génial", "available": true },
           { "label": "Site responsive", "available": true },
           { "label": "Facile à utiliser", "available": false },
@@ -115,10 +122,10 @@
         "title": "Entreprise",
         "price": "$199",
         "features": [
-          { "label": "Design d'interface", "available": true },
+          { "label": "Conception d'interface", "available": true },
           { "label": "Code Front-end", "available": true },
           { "label": "Développement Back-end", "available": true },
-          { "label": "Optimisation SEO", "available": true },
+          { "label": "Optimisation pour les moteurs de recherche", "available": true },
           { "label": "Support génial", "available": true },
           { "label": "Site responsive", "available": true },
           { "label": "Facile à utiliser", "available": true },
@@ -128,73 +135,146 @@
       }
     ]
   },
+    "blog_title": "Blog",
   "blog": [
     {
       "id": 1,
       "category": "Photographie",
-      "date": "28 avr. 2022",
-      "title": "La vocation de l’artiste est d’envoyer de la lumière dans le cœur humain.",
-      "description": "La photographie capture les moments fugaces, les émotions et les histoires à travers la lumière et la composition. C'est un puissant moyen de préserver des souvenirs et de voir le monde sous de nouvelles perspectives.",
+      "date": "28 Avr 2022",
+      "title": "La vocation de l'artiste est d'envoyer la lumière dans le cœur humain.",
+      "description": "La photographie capture des moments fugaces, des émotions et des histoires à travers la lumière et la composition. C'est un moyen puissant qui nous permet de préserver des souvenirs et de voir le monde sous de nouvelles perspectives.",
       "author": "Daryl Smith",
       "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/a2oigomwmd2pdsmo0td2.png"
     },
     {
       "id": 2,
       "category": "Aventure",
-      "date": "28 avr. 2022",
-      "title": "La mission de l’art est de représenter la nature et non de l’imiter.",
-      "description": "L’aventure nourrit l’âme avec de l’excitation, du courage et de la découverte. Chaque voyage façonne notre identité et remet en question notre compréhension du monde.",
+      "date": "28 Avr 2022",
+      "title": "La mission de l'art est de représenter la nature, pas de l'imiter.",
+      "description": "L'aventure nourrit l'âme avec excitation, courage et découverte. Qu'il s'agisse de montagnes ou d'océans, chaque voyage façonne notre identité et remet en question notre compréhension du monde qui nous entoure.",
       "author": "Daryl Smith",
       "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/oaziena98yftl75ohqr0.png"
     },
     {
       "id": 3,
       "category": "Design graphique",
-      "date": "28 avr. 2022",
-      "title": "Il existe d'innombrables versions de lorem ipsum, la plus célèbre...",
-      "description": "Le design graphique allie créativité et stratégie pour communiquer des idées visuellement. Il construit une identité de marque, guide les utilisateurs et ajoute de la valeur esthétique aux supports numériques et imprimés.",
+      "date": "28 Avr 2022",
+      "title": "Il existe d'innombrables versions de lorem ipsum, la plus célèbre.",
+      "description": "Le design graphique combine créativité et stratégie pour communiquer des idées visuellement. Il construit l'identité de marque, guide les utilisateurs et ajoute une valeur esthétique aux expériences numériques et imprimées sur plusieurs plateformes.",
       "author": "Sarah Connor",
       "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/bpyhuzxu9r2ujrbkayzf.png"
     },
     {
       "id": 4,
       "category": "Voyage",
-      "date": "28 avr. 2022",
-      "title": "La mission de l’art est de représenter la nature et non de l’imiter.",
-      "description": "Le voyage ouvre les esprits, relie les cultures et inspire la croissance. Il enseigne l’empathie, met en valeur la beauté naturelle et enrichit la vie par des expériences inoubliables.",
+      "date": "28 Avr 2022",
+      "title": "La mission de l'art est de représenter la nature, pas de l'imiter.",
+      "description": "Le voyage ouvre l'esprit, connecte les cultures et inspire la croissance. Il enseigne l'empathie, met en valeur la beauté naturelle et enrichit la vie avec des expériences inoubliables qui façonnent qui nous sommes et comment nous pensons.",
       "author": "Daryl Smith",
       "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/x9nxja2xocuods9vq4tj.png"
     },
     {
       "id": 5,
       "category": "Design UI/UX",
-      "date": "12 mai 2022",
-      "title": "Le design est l’intelligence rendue visible.",
-      "description": "Le design UI/UX se concentre sur l’expérience utilisateur, la fonctionnalité et la clarté de l’interface. Il rend les produits numériques accessibles, engageants et utiles.",
+      "date": "12 Mai 2022",
+      "title": "Le design est l'intelligence rendue visible.",
+      "description": "Le design UI/UX se concentre sur l'expérience utilisateur, la fonctionnalité et la clarté de l'interface. Il garantit que les produits numériques sont accessibles, engageants et répondent aux besoins des utilisateurs grâce à des mises en page intuitives et des interactions réfléchies.",
       "author": "Alex Johnson",
       "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/z3kep5xezglcufkxke08.png"
     },
     {
       "id": 6,
-      "category": "Développement Web",
-      "date": "15 juin 2022",
-      "title": "La meilleure façon de prédire l’avenir est de l’inventer.",
-      "description": "Le développement web crée des espaces numériques interactifs avec du code, de la logique et du design. Il permet aux entreprises d'exister en ligne et d'améliorer l'expérience utilisateur à l'échelle mondiale.",
+      "category": "Développement web",
+      "date": "15 Juin 2022",
+      "title": "La meilleure façon de prédire l'avenir est de l'inventer.",
+      "description": "Le développement web construit des espaces numériques interactifs en utilisant du code, de la logique et du design. Les développeurs créent des sites web réactifs, sécurisés et évolutifs qui mettent les entreprises en ligne et améliorent l'expérience utilisateur à l'échelle mondiale.",
       "author": "Sarah Connor",
       "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747663306/front-end-task/blogs/fd6nwxcl1ajdrdmiauvn.png"
     }
   ],
-  "portfolio": {
-    "heading": "Portfolio",
-    "projects": [
-      {
-        "title": "Projet Un",
-        "description": "Description du projet un"
-      },
-      {
-        "title": "Projet Deux",
-        "description": "Description du projet deux"
-      }
-    ]
+  "portfolioTitle": "Portfolio",
+  "portfolioCategories": [
+    "Tous",
+    "Design graphique",
+    "Application mobile",
+    "Photographie",
+    "Design UI/UX"
+  ],
+  "portfolioData": [
+    {
+      "id": 1,
+      "category": "Design graphique",
+      "title": "Maquette Figma",
+      "description": "PSD modifiable de maquette Figma",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747650966/front-end-task/grivjtwuoz7cksw1rw8b.png",
+      "live": "#"
+    },
+    {
+      "id": 2,
+      "category": "Application mobile",
+      "title": "UI Application mobile",
+      "description": "UI mobile pour magasin de plantes",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747650966/front-end-task/ehhihhxpoaofrd74mmfn.png",
+      "live": "#"
+    },
+    {
+      "id": 3,
+      "category": "Design graphique",
+      "title": "Design de notes adhésives",
+      "description": "Branding de bureau",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747650966/front-end-task/hkh7fb329mx2lfitqrph.png",
+      "live": "#"
+    },
+    {
+      "id": 4,
+      "category": "Design UI/UX",
+      "title": "UI Montre intelligente",
+      "description": "Interface moderne pour wearable",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747650966/front-end-task/ff4h2hjdfadqjeyhc7uy.png",
+      "live": "#"
+    },
+    {
+      "id": 5,
+      "category": "Design graphique",
+      "title": "Design de sac de shopping",
+      "description": "Emballage élégant",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747650966/front-end-task/y1lo5u07ve5vk6ozwc8a.png",
+      "live": "#"
+    },
+    {
+      "id": 6,
+      "category": "Design graphique",
+      "title": "Maquette de tasse",
+      "description": "Branding de produit",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747650965/front-end-task/wj14cww01hups2pcfybd.png",
+      "live": "#"
+    },
+    {
+      "id": 7,
+      "category": "Photographie",
+      "title": "Mise en page photographie",
+      "description": "Mise en scène photo produit",
+      "image": "https://res.cloudinary.com/de8yddexc/image/upload/v1747650966/front-end-task/aucejk2fzmli1ilhdpgm.png",
+      "live": "#"
+    },
+    {
+      "id": 8,
+      "category": "Design UI/UX",
+      "title": "Design de site web",
+      "description": "Site web pour studio de fitness",
+      "static": true
+    },
+    {
+      "id": 9,
+      "category": "Photographie",
+      "title": "Photographie",
+      "description": "Projet de photographie",
+      "static": true
+    }
+  ],
+  "notFound": {
+    "title": "Page non trouvée",
+    "description": "Désolé, la page que vous cherchez n'existe pas ou a été déplacée.",
+    "backToHome": "Retour à l'accueil"
   }
 }

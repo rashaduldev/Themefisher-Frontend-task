@@ -21,14 +21,14 @@ export default function Resume() {
   const workHistoryData = translations.workHistory;
 
   return (
-    <section className="py-10">
+    <section id="resume" className="py-10">
       <div className={`max-w-[835px] ${isRTL ? "mr-auto" : "ml-auto"}`}>
         <h2
           className={`text-[48px] font-bold leading-[100%] tracking-normal mb-6 ${
             isRTL ? "text-right mr-2" : "text-left ml-2"
           }`}
         >
-          Resume
+          {translations.resume || "Resume"}
         </h2>
         {/* Education Section */}
         <section className="max-w-[685px] mb-14">
@@ -47,7 +47,7 @@ export default function Resume() {
               />
             </div>
             <h3 className="font-bold text-[24px] leading-[100%] tracking-[0%]">
-              Education
+              {translations.educationTitle || "Education"}
             </h3>
           </header>
 
@@ -70,7 +70,7 @@ export default function Resume() {
                 alt="Education Icon"
               />
             </div>
-            <h3 className="text-[24px] font-semibold">Work History</h3>
+            <h3 className="text-[24px] font-semibold">{translations.workHistoryTitle || "Work Historys"}</h3>
           </header>
           <Timeline data={workHistoryData} type="work" isRTL={isRTL} />
         </section>
