@@ -5,6 +5,9 @@ import { FaGraduationCap, FaBriefcase } from "react-icons/fa";
 import { RiPokerDiamondsLine } from "react-icons/ri";
 import { LayoutContext } from "./context";
 import { EducationItem, WorkHistoryItem } from "@/types/translations";
+import education from "../../public/assets/icons/Education.svg";
+import work from "../../public/assets/icons/work-history.svg";
+import Image from "next/image";
 
 export default function Resume() {
   const context = useContext(LayoutContext);
@@ -30,15 +33,24 @@ export default function Resume() {
         {/* Education Section */}
         <section className="max-w-[685px] mb-14">
           <header
-            className={`flex items-center gap-2 mb-6 ml-[10px] ${
+            className={`flex items-center gap-2 mb-6 ml-[6px] ${
               isRTL ? "text-right ml-2" : "text-left mr-2"
             }`}
           >
-            <FaGraduationCap className="text-yellow-500 text-2xl p-1 bg-[#333333] rounded" />
+            <div className="w-[32px] h-[32px] bg-[#333333] flex items-center justify-center rounded">
+              <Image
+                width={18}
+                height={18}
+                className="w-[18px] h-[18px]"
+                src={education.src}
+                alt="Education Icon"
+              />
+            </div>
             <h3 className="font-bold text-[24px] leading-[100%] tracking-[0%]">
               Education
             </h3>
           </header>
+
           <Timeline data={educationData} type="education" isRTL={isRTL} />
         </section>
 
@@ -49,7 +61,15 @@ export default function Resume() {
               isRTL ? "text-right mr-2" : "ml-2"
             }`}
           >
-            <FaBriefcase className="text-yellow-500 text-2xl p-1 bg-[#333333] rounded" />
+            <div className="w-[32px] h-[32px] bg-[#333333] flex items-center justify-center rounded">
+              <Image
+                width={18}
+                height={18}
+                className="w-[18px] h-[18px]"
+                src={work.src}
+                alt="Education Icon"
+              />
+            </div>
             <h3 className="text-[24px] font-semibold">Work History</h3>
           </header>
           <Timeline data={workHistoryData} type="work" isRTL={isRTL} />

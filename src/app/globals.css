@@ -3,15 +3,22 @@
 
 @custom-variant dark (&:is(.dark *));
 
-[dir="rtl"] {
-  font-family: 'Amiri', serif;
-}
+[dir="rtl"] 
 body {
   @apply font-sans;
 }
 html {
   scroll-behavior: smooth;
 }
+:root {
+  --font-dm-sans: 'DM Sans', sans-serif;
+}
+
+.font-sans {
+  font-family: var(--font-dm-sans);
+}
+
+
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -179,4 +186,26 @@ html {
 }
 .break-inside-avoid {
   break-inside: avoid;
+}
+button:hover {
+  color: white !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background: #000;
+}
+/* styles.css or Pricing.module.css */
+.custom-button {
+  border: 1px solid #facc15; /* tailwind yellow-300 */
+  padding: 0.75rem 1.5rem; /* py-3 px-6 */
+  border-radius: 0.5rem; /* rounded-lg */
+  color: #f59e0b; /* text-orange-400 */
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  cursor: pointer;
+  z-index: 50;
+}
+
+.custom-button:hover {
+  background-color: white;
+  color: black;
+  border-color: transparent;
 }

@@ -143,19 +143,22 @@ const Portfolio = () => {
                 />
 
                 {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-black bg-opacity-100 opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex flex-col justify-center items-center text-white p-4">
+                <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white p-4">
+                  {/* Show icon only on hover */}
                   <a
                     href={item.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="absolute top-2 right-2 z-10 text-white bg-[#000000] rounded-full p-2 hover:text-gray-300"
+                    className="absolute top-2 right-2 z-50 bg-black/100 text-white hover:text-gray-300 rounded-full h-8 w-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    style={{ boxShadow: "0px 0px 6px 6px #FFFFFF0D" }}
                   >
-                    <FaLink />
+                    <FaLink className="text-white text-base w-[16px] h-[16px] pointer-events-none" />
                   </a>
-                  <h3 className="font-bold text-[20px] leading-[100%] tracking-[0%] text-center mb-2">
+
+                  <h3 className="font-bold text-[20px] text-[#FFFFFF] text-center mb-2">
                     {item.title}
                   </h3>
-                  <p className="font-normal text-[16px] leading-[100%] tracking-[0%] text-center">
+                  <p className="font-normal text-[16px] text-[#AFAFAF] text-center">
                     {item.description}
                   </p>
                 </div>

@@ -8,17 +8,18 @@ import {
   FaTwitter,
   FaGithub,
 } from "react-icons/fa";
-import { MdHome, MdOutlinePermPhoneMsg } from "react-icons/md";
 import { motion } from "framer-motion";
 import { LayoutContext } from "./context";
 import handsomeimage from "../../public/assets/handsome.png";
-import { HiOutlineUser } from "react-icons/hi";
 import { BsMoonFill, BsSunFill } from "react-icons/bs";
 import Image from "next/image";
-import { RxDownload } from "react-icons/rx";
-import { IoHomeOutline } from "react-icons/io5";
-import { CgWorkAlt } from "react-icons/cg";
-import { TfiWrite } from "react-icons/tfi";
+import download from "../../public/assets/icons/download.svg";
+import home from "../../public/assets/icons/home.svg";
+import img1 from "../../public/assets/icons/active-home.svg";
+import img2 from "../../public/assets/icons/profile-about.svg";
+import img3 from "../../public/assets/icons/portfolio.svg";
+import img4 from "../../public/assets/icons/blog.svg";
+import img5 from "../../public/assets/icons/contact.svg";
 
 const socialLinks = [
   { icon: <FaFacebookF />, url: "#" },
@@ -29,13 +30,18 @@ const socialLinks = [
 ];
 
 const sideMenuIcons = [
-  <IoHomeOutline className="text-yellow-500" />,
-  <HiOutlineUser />,
-  <CgWorkAlt />,
-  <TfiWrite />,
-  <MdOutlinePermPhoneMsg />,
+  <Image
+    className="text-yellow-500"
+    src={img1}
+    alt="icon 1"
+    width={24}
+    height={24}
+  />,
+  <Image src={img2} alt="icon 2" width={24} height={24} />,
+  <Image src={img3} alt="icon 3" width={24} height={24} />,
+  <Image src={img4} alt="icon 4" width={24} height={24} />,
+  <Image src={img5} alt="icon 5" width={24} height={24} />,
 ];
-
 export default function ProfileCard() {
   const context = useContext(LayoutContext);
   if (!context)
@@ -64,9 +70,13 @@ export default function ProfileCard() {
       dir={isRTL ? "rtl" : "ltr"}
       className="flex justify-center items-start transition-colors duration-300"
     >
-      <div className="w-full max-w-[1320px]">
+      <div className="w-full max-w-[1320px] relative z-10">
+        {/* Background text behind */}
+        <h1 className="absolute -top-10 -left-20 text-7xl font-bold leading-[100%] tracking-[0] text-[#ffffff30] select-none pointer-events-none w-[257px] h-[90px] z-0">
+          Home
+        </h1>
         {/* Topbar */}
-        <div className="w-full grid grid-cols-[36px_1fr] sm:grid-cols-[44px_1fr] md:grid-cols-[42px_368px_1fr] bg-[#121414] dark:bg-zinc-900 text-white px-3 sm:px-4 md:px-6">
+        <div className="w-full grid grid-cols-[36px_1fr] sm:grid-cols-[44px_1fr] md:grid-cols-[42px_368px_1fr] bg-[#121414] dark:bg-zinc-900 text-white px-3 sm:px-4 md:px-6 z-50 relative">
           <div></div>
           <div className="relative flex">
             <div className="flex flex-col justify-center pr-3 py-3 sm:pr-4 sm:py-4 md:pr-6 md:py-4 w-full">
@@ -86,7 +96,13 @@ export default function ProfileCard() {
           <div className="flex items-center justify-between w-[355px] md:w-full pl-3 sm:pl-4 md:pl-6 py-3 md:py-4 flex-wrap gap-3">
             <div className="flex items-center gap-2 sm:gap-3">
               <span className="w-9 h-9 sm:w-10 sm:h-10 rounded-[6px] bg-gradient-to-r from-[#F5BD4D] to-[#F89222] flex items-center justify-center text-white p-1">
-                <MdHome className="w-5 h-5 sm:w-6 sm:h-6" />
+                <Image
+                  height={20}
+                  width={20}
+                  className="w-5 h-5 sm:w-6 sm:h-6"
+                  src={home.src}
+                  alt=""
+                />
               </span>
               <span className="text-xl sm:text-2xl font-bold">Home</span>
             </div>
@@ -224,7 +240,7 @@ export default function ProfileCard() {
             <p className="text-sm md:text-base font-bold leading-[140%] tracking-normal text-white mb-4">
               {info.age} / {info.author} / {info.location}
             </p>
-            <p className="text-[#C6C6C6] my-5 text-sm md:text-base font-medium leading-[110%] tracking-normal mb-6 max-w-full">
+            <p className="text-[#C6C6C6] my-5 text-sm md:text-base font-medium leading-[120%] tracking-normal mb-6 max-w-full">
               {info.description}
             </p>
 
@@ -234,7 +250,13 @@ export default function ProfileCard() {
               className="bg-gradient-to-r mt-5 from-[#F5BD4D] to-[#F89222] hover:opacity-90 text-white w-fit px-6 py-3 rounded-[50px] font-bold text-base leading-[100%] tracking-normal flex items-center gap-[10px] transition"
             >
               {PROFILEinfo.DOWNLOAD_CV}
-              <RxDownload className="w-6 h-6" />
+              <Image
+                height={18}
+                width={20}
+                className="w-5 h-[18px]"
+                src={download.src}
+                alt="download"
+              />
             </a>
           </motion.div>
 
