@@ -196,5 +196,10 @@
       "description": "Description for project two"
     }
   ]
-}
+},
+ "notFound": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for doesn’t exist or has been moved.",
+    "backToHome": "Go Back Home"
+  }
 }

@@ -28,6 +28,7 @@ const Skills = () => {
 
   return (
     <section
+    id="skills"
       className={`py-10 max-w-[835px] ${isRtl ? "mr-auto" : "ml-auto"}`}
       dir={direction}
     >
@@ -62,12 +63,7 @@ const Skills = () => {
                 </span>
               </div>
               <div
-                className="bg-[#5b3f1d] max-w-[670px] overflow-hidden"
-                style={{
-                  width: "685px",
-                  height: "16px",
-                  borderRadius: "25px",
-                }}
+                className="bg-[#5b3f1d] h-[16px] rounded-2xl max-w-[670px] overflow-hidden"
                 role="progressbar"
                 aria-valuenow={skill.value}
                 aria-valuemin={0}

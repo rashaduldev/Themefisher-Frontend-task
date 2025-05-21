@@ -72,8 +72,8 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-10 ml-auto max-w-[855px] px-2 md:px-4">
-      <div className="max-w-[658px]">
+    <section id="contact" className="py-10 ml-auto max-w-[835px] px-2 md:px-4">
+      <div className="max-w-[674px]">
         <h2 className="text-[48px] font-semibold leading-[100%] tracking-[0%] mb-6 text-left text-white">
           {t.heading}
         </h2>

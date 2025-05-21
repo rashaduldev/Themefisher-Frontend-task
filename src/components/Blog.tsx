@@ -25,7 +25,7 @@ const Blog: React.FC = () => {
   };
 
   return (
-    <section className="py-14 px-4 sm:px-6 lg:px-0 ml-auto max-w-[964px] w-full ">
+    <section id="blogs" className="py-14 lg:px-0 ml-auto max-w-[964px] w-full ">
       <div className="max-w-[674px] mx-auto">
         <h2 className="font-bold text-[48px] leading-[100%] tracking-[0%] mb-8 text-white text-center sm:text-left">
           Blog Posts

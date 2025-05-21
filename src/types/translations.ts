@@ -16,8 +16,14 @@ export interface Translations {
     plans: Plan[];
   };
   blog: BlogItem[];
+  notFound: NotFoundTranslation;
 }
 
+type NotFoundTranslation = {
+  title: string;
+  description: string;
+  backToHome: string;
+};
 export interface BlogItem {
   id: number;
   category: string;

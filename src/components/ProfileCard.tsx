@@ -14,12 +14,13 @@ import handsomeimage from "../../public/assets/handsome.png";
 import { BsMoonFill, BsSunFill } from "react-icons/bs";
 import Image from "next/image";
 import download from "../../public/assets/icons/download.svg";
-import home from "../../public/assets/icons/home.svg";
+import home from "../../public/assets/icons/Home.svg";
 import img1 from "../../public/assets/icons/active-home.svg";
 import img2 from "../../public/assets/icons/profile-about.svg";
 import img3 from "../../public/assets/icons/portfolio.svg";
 import img4 from "../../public/assets/icons/blog.svg";
 import img5 from "../../public/assets/icons/contact.svg";
+import Link from "next/link";
 
 const socialLinks = [
   { icon: <FaFacebookF />, url: "#" },
@@ -30,17 +31,31 @@ const socialLinks = [
 ];
 
 const sideMenuIcons = [
-  <Image
-    className="text-yellow-500"
-    src={img1}
-    alt="icon 1"
-    width={24}
-    height={24}
-  />,
-  <Image src={img2} alt="icon 2" width={24} height={24} />,
-  <Image src={img3} alt="icon 3" width={24} height={24} />,
-  <Image src={img4} alt="icon 4" width={24} height={24} />,
-  <Image src={img5} alt="icon 5" width={24} height={24} />,
+  {
+    img: img1,
+    alt: "Home",
+    href: "/",
+  },
+  {
+    img: img2,
+    alt: "Resume",
+    href: "#resume",
+  },
+  {
+    img: img3,
+    alt: "Portfolio",
+    href: "#portfolio",
+  },
+  {
+    img: img4,
+    alt: "Blogs",
+    href: "#blogs",
+  },
+  {
+    img: img5,
+    alt: "Contact",
+    href: "#contact",
+  },
 ];
 export default function ProfileCard() {
   const context = useContext(LayoutContext);
@@ -76,10 +91,10 @@ export default function ProfileCard() {
           Home
         </h1>
         {/* Topbar */}
-        <div className="w-full grid grid-cols-[36px_1fr] sm:grid-cols-[44px_1fr] md:grid-cols-[42px_368px_1fr] bg-[#121414] dark:bg-zinc-900 text-white px-3 sm:px-4 md:px-6 z-50 relative">
+        <div className="w-full grid grid-cols-[36px_1fr] sm:grid-cols-[44px_1fr] md:grid-cols-[42px_368px_1fr] bg-[#121414] dark:bg-[#121414] text-white px-3 sm:px-4 md:px-6 z-50 relative">
           <div></div>
           <div className="relative flex">
-            <div className="flex flex-col justify-center pr-3 py-3 sm:pr-4 sm:py-4 md:pr-6 md:py-4 w-full">
+            <div className="flex flex-col justify-center -ml-6 md:-ml-0 pr-3 py-3 sm:pr-4 sm:py-4 md:pr-6 md:py-4 w-full">
               <h1 className="text-2xl sm:text-3xl md:text-[32px] font-bold leading-[100%] flex items-center gap-1 sm:gap-2">
                 Daryl
                 <span className="bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent">
@@ -150,7 +165,7 @@ export default function ProfileCard() {
           </div>
         </div>
         {/* Main layout */}
-        <div className="bg-[#171B1A] dark:bg-zinc-900 grid grid-cols-1 md:grid-cols-[auto_68px_365px_1fr_68px_auto]">
+        <div className="bg-[#171B1A] dark:bg-[#171B1A] grid grid-cols-1 md:grid-cols-[auto_68px_365px_1fr_68px_auto]">
           {/* Left gradient */}
           <div className="hidden md:block relative w-full h-full overflow-hidden">
             <div
@@ -169,14 +184,21 @@ export default function ProfileCard() {
                 background: "linear-gradient(225deg, #171B1A 50%, #121414 50%)",
               }}
             />
-            <div className="relative z-10 flex flex-col gap-8">
+             <div className="relative z-10 flex flex-col gap-8">
               {sideMenuIcons.map((icon, i) => (
-                <div
+                <Link
                   key={i}
+                  href={icon.href}
                   className="text-gray-400 hover:text-yellow-400 text-2xl cursor-pointer transition-transform duration-300 hover:scale-110 w-[32px] h-[32px]"
                 >
-                  {icon}
-                </div>
+                  <Image
+                    src={icon.img}
+                    alt={icon.alt}
+                    width={32}
+                    height={32}
+                    className="w-full h-full object-contain"
+                  />
+                </Link>
               ))}
             </div>
           </div>
@@ -187,7 +209,7 @@ export default function ProfileCard() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="bg-black dark:bg-zinc-800 w-full max-w-[368px] mx-auto flex flex-col justify-between items-center border border-transparent hover:border-[#f5bd4d8e] transition-all duration-300"
+            className="bg-black dark:bg-black w-full max-w-[368px] mx-auto flex flex-col justify-between items-center border border-transparent hover:border-[#f5bd4d8e] transition-all duration-300"
           >
             {/* Image section */}
             <div className="relative w-full h-[504px] overflow-hidden">
@@ -243,21 +265,21 @@ export default function ProfileCard() {
             <p className="text-[#C6C6C6] my-5 text-sm md:text-base font-medium leading-[120%] tracking-normal mb-6 max-w-full">
               {info.description}
             </p>
-
-            <a
-              href="#contact"
-              rel="noopener noreferrer"
-              className="bg-gradient-to-r mt-5 from-[#F5BD4D] to-[#F89222] hover:opacity-90 text-white w-fit px-6 py-3 rounded-[50px] font-bold text-base leading-[100%] tracking-normal flex items-center gap-[10px] transition"
-            >
-              {PROFILEinfo.DOWNLOAD_CV}
-              <Image
-                height={18}
-                width={20}
-                className="w-5 h-[18px]"
-                src={download.src}
-                alt="download"
-              />
-            </a>
+           <a
+            href="/assets/Resume of Md Rashadul Islam.pdf"
+            download="Rashadul-Islam-CV.pdf"
+            rel="noopener noreferrer"
+            className="bg-gradient-to-r mt-5 from-[#F5BD4D] to-[#F89222] hover:opacity-90 text-white w-fit px-6 py-3 rounded-[50px] font-bold text-base leading-[100%] tracking-normal flex items-center gap-[10px] transition"
+          >
+            {PROFILEinfo.DOWNLOAD_CV}
+            <Image
+              height={18}
+              width={20}
+              className="w-5 h-[18px]"
+              src={download.src}
+              alt="download"
+            />
+          </a>
           </motion.div>
 
           {/* Right gradient and footer */}

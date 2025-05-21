@@ -104,7 +104,7 @@ const Portfolio = () => {
       : dynamicItems.filter((item) => item.category === active);
 
   return (
-    <section className="py-10 px-4 sm:px-6 lg:px-0 ml-auto max-w-[950px] w-full">
+    <section id="Portfolio" className="py-10  lg:px-0 ml-auto max-w-[950px] w-full">
       <div className="max-w-[688px] mx-auto">
         <h2 className="font-bold text-[48px] leading-[100%] tracking-[0%] mb-8 text-white text-center sm:text-left">
           Portfolio
@@ -172,7 +172,7 @@ const Portfolio = () => {
           {staticItems.map((item) => (
             <div
               key={item.id}
-              className="bg-black rounded-md p-6 max-h-[204px] max-w-[332px] text-white relative flex flex-col justify-center items-center"
+              className="bg-black rounded-md p-6 max-h-[204px] md:max-w-[332px] text-white relative flex flex-col justify-center items-center"
               style={{ height: 300 }}
             >
               <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
