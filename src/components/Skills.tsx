@@ -37,51 +37,52 @@ const Skills = () => {
           {translations.skills.skillsTitle || "Skills"}
         </h2>
         <ul className="space-y-5 px-2 md:px-4">
-          {skills.map((skill, idx) => (
-            <li key={idx}>
-              <div
-                className={`flex justify-between mb-1 ${
-                  isRTL ? "flex-row" : ""
-                }`}
-              >
-                <span className="font-medium text-[24px] leading-[120%] tracking-[0%] mb-2">
-                  {skill.name}
-                </span>
-                <span
-                  className="font-medium text-[20px] leading-[120%] text-center"
-                  style={{
-                    background: "linear-gradient(to right, #F5BD4D, #F89222)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  }}
-                >
-                  {skill.value}%
-                </span>
-              </div>
-              <div
-                className="bg-[#5b3f1d] h-[16px] rounded-2xl max-w-[670px] overflow-hidden relative"
-                role="progressbar"
-                aria-valuenow={skill.value}
-                aria-valuemin={0}
-                aria-valuemax={100}
-              >
-                <div
-                  className="h-full rounded-full transition-all duration-[1500ms] ease-in-out flex items-center justify-center text-white absolute top-0 bottom-0"
-                  style={{
-                    width: loaded ? `${skill.value}%` : "0%",
-                    background: "linear-gradient(to right, #F5BD4D, #F89222)",
-                    fontWeight: 500,
-                    fontSize: "20px",
-                    lineHeight: "120%",
-                    letterSpacing: "0%",
-                    textAlign: "center",
-                    right: isRTL ? 0 : "auto",
-                    left: isRTL ? "auto" : 0,
-                  }}
-                />
-              </div>
-            </li>
-          ))}
+       {skills.map((skill, idx) => (
+        <li key={idx}>
+          <div
+            className={`flex justify-between mb-1 ${
+              isRTL ? "flex-row" : ""
+            }`}
+          >
+            <span className="font-medium text-[24px] leading-[120%] tracking-[0%] mb-2">
+              {skill.name}
+            </span>
+            <span
+              className="font-medium text-[20px] leading-[120%] text-center"
+              style={{
+                background: "linear-gradient(to right, #F5BD4D, #F89222)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
+              {skill.value}%
+            </span>
+          </div>
+          <div
+            className="bg-[#5b3f1d] h-[16px] rounded-2xl max-w-[670px] overflow-hidden relative"
+            role="progressbar"
+            aria-valuenow={skill.value}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            aria-label={`${skill.name} skill proficiency is ${skill.value} percent`}
+          >
+            <div
+              className="h-full rounded-full transition-all duration-[1500ms] ease-in-out flex items-center justify-center text-white absolute top-0 bottom-0"
+              style={{
+                width: loaded ? `${skill.value}%` : "0%",
+                background: "linear-gradient(to right, #F5BD4D, #F89222)",
+                fontWeight: 500,
+                fontSize: "20px",
+                lineHeight: "120%",
+                letterSpacing: "0%",
+                textAlign: "center",
+                right: isRTL ? 0 : "auto",
+                left: isRTL ? "auto" : 0,
+              }}
+            />
+          </div>
+          </li>
+        ))}
         </ul>
       </div>
     </section>

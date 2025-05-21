@@ -23,11 +23,11 @@ import img5 from "../../public/assets/icons/contact.svg";
 import Link from "next/link";
 
 const socialLinks = [
-  { icon: <FaFacebookF />, url: "#" },
-  { icon: <FaTwitter />, url: "#" },
-  { icon: <FaLinkedinIn />, url: "#" },
-  { icon: <FaPinterestP />, url: "#" },
-  { icon: <FaGithub />, url: "#" },
+  { icon: <FaFacebookF />, url: "facebook.com" },
+  { icon: <FaTwitter />, url: "x.com" },
+  { icon: <FaLinkedinIn />, url: "linkedin.com" },
+  { icon: <FaPinterestP />, url: "interest.com" },
+  { icon: <FaGithub />, url: "github.com" },
 ];
 
 const sideMenuIcons = [

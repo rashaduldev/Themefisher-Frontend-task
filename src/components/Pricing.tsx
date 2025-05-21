@@ -87,7 +87,7 @@ const Pricing = () => {
               </div>
 
               <ul
-                className={`my-6 space-y-2 text-gray-200 bg-[#121414] p-4 font-normal text-base leading-[120%] tracking-[0%] z-10 relative ${
+                className={`my-6 space-y-2 bg-[#121414] p-4 font-normal text-base leading-[120%] tracking-[0%] z-10 relative ${
                   isRTL ? "text-right" : "text-left"
                 }`}
               >
@@ -97,7 +97,7 @@ const Pricing = () => {
                     className={`${
                       feature.available
                         ? "text-white"
-                        : "text-gray-500 line-through"
+                        : "text-[#979797] line-through"
                     }`}
                   >
                     {feature.label}
